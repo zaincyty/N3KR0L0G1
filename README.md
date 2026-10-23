@@ -12,13 +12,13 @@
 
 ---
 
-### <img src="https://api.iconify.design/lucide:newspaper.svg?color=%23B5541F" width="18" height="18" align="center" /> sekilas proyek
+### <img src="./icons/newspaper.svg" width="18" height="18" align="center" /> sekilas proyek
 
 nekrologi dibangun untuk ajang **frontend starter camp - fsc 2026 - bcc filkom universitas brawijaya**. alih-alih membuat antarmuka saas klise yang seragam, proyek ini memilih jalur *editorial craftsmanship* bergaya koran fisik tempo dulu dengan pendekatan tactile swiss grid, sudut tajam 0px, dan penghormatan penuh terhadap standar baku web platform.
 
 ---
 
-### <img src="https://api.iconify.design/lucide:folder-tree.svg?color=%23B5541F" width="18" height="18" align="center" /> arsitektur & struktur berkas
+### <img src="./icons/folder-tree.svg" width="18" height="18" align="center" /> arsitektur & struktur berkas
 
 semua kode ditulis murni tanpa bundler, tanpa npm, dan tanpa framework luar. cukup buka peramban dan naskah langsung tersaji utuh.
 
@@ -41,32 +41,32 @@ nekrologi/
 
 ---
 
-### <img src="https://api.iconify.design/lucide:sparkles.svg?color=%23B5541F" width="18" height="18" align="center" /> fitur unggulan
+### <img src="./icons/sparkles.svg" width="18" height="18" align="center" /> fitur unggulan
 
-- <img src="https://api.iconify.design/lucide:flame.svg?color=%23B5541F" width="15" height="15" align="center" /> **berita duka utama renjana**  
+- <img src="./icons/flame.svg" width="15" height="15" align="center" /> **berita duka utama renjana**  
   naskah editorial mendalam yang mengulas kepunahan lema *renjana*, disajikan dalam dua kolom cetak koran dengan *drop cap* 4 baris, kotak riwayat leksikografis, dan kutipan sastra sitor situmorang tahun 1955.
 
-- <img src="https://api.iconify.design/lucide:book-open.svg?color=%23B5541F" width="15" height="15" align="center" /> **indeks 15 lema kanonikal**  
+- <img src="./icons/book-open.svg" width="15" height="15" align="center" /> **indeks 15 lema kanonikal**  
   memuat 15 kata riil dari korpus kbbi dan majalah sastra *poedjangga baroe*, terentang dari dekade 1970-an hingga 2010-an - tetiron, djelata, cendayam, swatantra, puspas, geramang, adicita, anggana, wiyata, renjana, anala, sawala, gencat, candala, mansor -.
 
-- <img src="https://api.iconify.design/lucide:archive.svg?color=%23B5541F" width="15" height="15" align="center" /> **akordeon eksklusif ramah rasa**  
+- <img src="./icons/archive.svg" width="15" height="15" align="center" /> **akordeon eksklusif ramah rasa**  
   ketika satu arsip dibuka, kartu arsip lain otomatis menutup rapi. didukung dua lapis pengaman: atribut asli html5 `name="obituari-arsip"` yang jalan meski javascript mati, serta pendengar acara javascript untuk peramban lawas.
 
-- <img src="https://api.iconify.design/lucide:sliders-horizontal.svg?color=%23B5541F" width="15" height="15" align="center" /> **penyaring dekade cerdas**  
+- <img src="./icons/sliders.svg" width="15" height="15" align="center" /> **penyaring dekade cerdas**  
   memilah lema berdasarkan dekade keberangkatan kata dari ruang publik nusantara, lengkap dengan pembaruan status dinamis untuk pelindung aksesibilitas pembaca layar *screen reader*.
 
-- <img src="https://api.iconify.design/lucide:compass.svg?color=%23B5541F" width="15" height="15" align="center" /> **penjelajah nekrologi acak**  
+- <img src="./icons/compass.svg" width="15" height="15" align="center" /> **penjelajah nekrologi acak**  
   fitur pemilihan satu obituari secara acak dengan animasi gulir lembut *smooth scroll* dan fokus papan ketik otomatis.
 
-- <img src="https://api.iconify.design/lucide:moon.svg?color=%23B5541F" width="15" height="15" align="center" /> **mode baca hening - ritual perenungan**  
+- <img src="./icons/moon.svg" width="15" height="15" align="center" /> **mode baca hening - ritual perenungan**  
   meredupkan bilah informasi telegram dan filter yang ramai untuk memberikan ruang kontemplasi membaca yang tenang. pilihan pembaca tersimpan di *sessionStorage* tanpa kuki pelacak dan dapat ditutup cepat lewat tombol escape.
 
-- <img src="https://api.iconify.design/lucide:shield-check.svg?color=%23B5541F" width="15" height="15" align="center" /> **100% mandiri - zero cdn dependency**  
+- <img src="./icons/shield-check.svg" width="15" height="15" align="center" /> **100% mandiri - zero cdn dependency**  
   seluruh aset font dan ikon tersimpan lokal di dalam repositori. halaman dapat dibuka langsung lewat protokol `file://` tanpa sambungan internet dan tetap dapat dibaca sempurna saat javascript dinonaktifkan.
 
 ---
 
-### <img src="https://api.iconify.design/lucide:play.svg?color=%23B5541F" width="18" height="18" align="center" /> cara menjalankan
+### <img src="./icons/play.svg" width="18" height="18" align="center" /> cara menjalankan
 
 tidak perlu proses instalasi dependensi atau kompilasi build apa pun.
 
@@ -76,6 +76,6 @@ tidak perlu proses instalasi dependensi atau kompilasi build apa pun.
 
 ---
 
-### <img src="https://api.iconify.design/lucide:landmark.svg?color=%23B5541F" width="18" height="18" align="center" /> lisensi & etika data
+### <img src="./icons/library.svg" width="18" height="18" align="center" /> lisensi & etika data
 
 seluruh data lema dihimpun dari dokumentasi badan pengembangan dan pembinaan bahasa, kbbi edisi kelima, serta arsip terbitan sastra bersejarah indonesia. font *newsreader* dan *dm mono* didistribusikan di bawah lisensi sil open font license v1.1.
