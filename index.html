@@ -16,7 +16,7 @@ N3KR0L0G1 - index.html
   
   <title>NEKROLOGI / Lembaran Kata yang Telah Berpulang</title>
 
-  <!-- lembar gaya penataan rupa - tiga serangkai css - -->
+  <!-- stylesheet css -->
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/components.css">
@@ -190,7 +190,7 @@ N3KR0L0G1 - index.html
           </p>
         </div>
 
-        <!-- catatan biografis kata tanpa kotak murahan -->
+        <!-- data biografis kata -->
         <section class="archival-dossier" aria-label="Catatan Biografis Lema Renjana">
           <h2 class="chronicle-heading">Catatan Biografis Kata</h2>
 
@@ -1026,87 +1026,32 @@ N3KR0L0G1 - index.html
 
     </main>
 
-        <!-- k0l0f0n d4n impresum cetak lembaran broadsheet -->
-    <footer role="contentinfo" id="kolofon-bawah" class="newspaper-colophon colophon">
-      <div class="colophon-inner">
-
-        <!-- baris maklumat penutup: kutipan takzim dan judul kolofon -->
-        <div class="colophon-lead">
-          <div class="colophon-testament">
-            <blockquote class="colophon-quote">
-              <p>“Terbitan ini tidak dijual. Ia hanya dicetak untuk mereka yang bersedia berhenti sejenak dan membaca kata-kata yang telah purna tugas.”</p>
-            </blockquote>
-          </div>
-          <div class="colophon-statement">
-            <h2 class="colophon-title">Kolofon &amp; Catatan Percetakan</h2>
-            <p class="colophon-summary">
-              Dihimpun dan diterbitkan secara mandiri dengan takzim bagi pemerhati perbendaharaan kata bahasa Indonesia. Sidang Redaksi Lembaran Memorial, Malang dan Jakarta, Oktober 2026.
-            </p>
-          </div>
+        <!-- footer impresum cetak broadsheet adopsi standar shockingmike -->
+    <footer role="contentinfo" id="kolofon-bawah" class="footer section--ink">
+      <div class="grid footer__top">
+        <div class="footer__news">
+          <h2 class="footer__heading">Letters about letters</h2>
+          <p class="footer__body">New releases, specimen drops and the odd kerning rant. Four emails a year, tops.</p>
         </div>
-
-        <!-- kisi ledger tabular empat zona mikro data -->
-        <div class="colophon-ledger" role="region" aria-label="Informasi Kolofon dan Sumber Korpus">
-
-          <div class="ledger-col">
-            <span class="ledger-tag">KORPUS RUJUKAN</span>
-            <ul class="ledger-list" role="list">
-              <li>Badan Pengembangan &amp; Pembinaan Bahasa</li>
-              <li>KBBI Edisi V Daring / <a href="https://kbbi.kemdikbud.go.id" rel="noopener external" class="ledger-link">kbbi.kemdikbud.go.id <svg class="inline-ext-icon" viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a></li>
-              <li>Majalah Sastra <em>Poedjangga Baroe</em> 1933&ndash;1942</li>
-              <li>Dokumentasi Pers Balai Pustaka &amp; <em>Sin Po</em> Batavia</li>
-            </ul>
+        <form class="nl" method="dialog" novalidate="" data-msg-success="Terima kasih! Warkah memorial telah dicatat." data-msg-error="Alamat surel tidak valid. Periksa dan coba lagi." onsubmit="event.preventDefault(); this.querySelector('.nl__msg').textContent = this.dataset.msgSuccess; this.querySelector('.nl__input').value = '';">
+          <label class="sr-only" for="nl-email">Email address for the newsletter</label>
+          <div class="nl__row">
+            <input class="nl__input" id="nl-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@example.com" data-qa="nl-email" aria-describedby="nl-message">
+            <button class="btn btn--solid nl__btn" type="submit" data-qa="nl-submit">Subscribe</button>
           </div>
-
-          <div class="ledger-col">
-            <span class="ledger-tag">TIPOGRAFI ARSIP</span>
-            <ul class="ledger-list" role="list">
-              <li><strong>Fraunces</strong> &mdash; Lema Utama, Tajuk, &amp; Kutipan</li>
-              <li><strong>Roboto Flex</strong> &mdash; Teks Narasi &amp; Analisis</li>
-              <li><strong>Recursive</strong> &mdash; Mikro Ledger &amp; Skala Waktu</li>
-              <li>Glif WOFF2 Lokal Mandiri Tanpa Ketergantungan CDN</li>
-            </ul>
-          </div>
-
-          <div class="ledger-col">
-            <span class="ledger-tag">REKAYASA CETAK</span>
-            <ul class="ledger-list" role="list">
-              <li>HTML5 Semantik &amp; Variabel Desain CSS Murni</li>
-              <li>Kedaulatan Pembaca: Nihil Pelacak &amp; Bebas Kuki</li>
-              <li>Aksesibilitas Tinggi Standar WCAG 2.1 AAA</li>
-              <li>Performa Luring Mandiri Cepat Tanpa Runtime Eksternal</li>
-            </ul>
-          </div>
-
-          <div class="ledger-col">
-            <span class="ledger-tag">LEMBARAN &amp; EDISI</span>
-            <ul class="ledger-list" role="list">
-              <li>Format: Broadsheet Digital Interaktif Responsif</li>
-              <li>Kurasi: 15 Lema Obsolet Terverifikasi Korpus</li>
-              <li>Persembahan: Frontend Starter Camp FSC 2026</li>
-              <li>Akses Arsip: Terbuka untuk Edukasi Kebahasaan</li>
-            </ul>
-          </div>
-
-        </div>
-
-        <!-- cap meterai broadsheet raksasa di dasar lembaran -->
-        <div class="colophon-wordmark" aria-hidden="true">NEKROLOGI</div>
-
-        <!-- bilah folio bawah dan navigasi kembali ke puncak -->
-        <div class="colophon-bottom-bar">
-          <p class="copyright-notice">
-            NEKROLOGI © 2026 / Didedikasikan dengan takzim bagi perbendaharaan kata bahasa Indonesia yang telah berpulang.
-          </p>
-          <a href="#konten-utama" class="colophon-top-link" aria-label="Kembali ke bagian atas lembaran obituari">
-            <span>[ Ke Puncak Lembaran ↑ ]</span>
-          </a>
-        </div>
-
+          <p class="nl__msg mono" id="nl-message" data-qa="nl-message" aria-live="polite"></p>
+        </form>
       </div>
+
+      <div class="grid footer__credits mono">
+        <p class="credits__copy">NEKROLOGI © 2026 / Memorial Kata Bahasa Indonesia</p>
+        <p class="credits__by"><a href="#konten-utama">Designed &amp; built for FSC 2026 ↑</a></p>
+      </div>
+
+      <p class="footer__ks" aria-hidden="true"><span>N</span><span>K</span></p>
     </footer>
 
-  <!-- skrip sumber kebenaran data dan interaksi progresif -->
+  <!-- script js -->
   <script src="js/data.js" defer></script>
   <script src="js/render.js" defer></script>
   <script src="js/main.js" defer></script>
