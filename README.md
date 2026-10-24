@@ -1,4 +1,4 @@
-# N3KR0L0G1
+# nekrologi
 
 > lembaran memorial digital untuk kata-kata bahasa indonesia yang telah berhenti digunakan — dicatat dengan kesungguhan filologis dan estetika koran broadsheet agar kehilangan bahasa tidak terjadi dalam senyap.
 
