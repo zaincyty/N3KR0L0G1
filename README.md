@@ -80,7 +80,7 @@ Gak perlu repot-repot jalanin `npm install`, langsung deloken iki ae rek:
 
 1. Unduh atau klona repositori ini ke laptop/komputer kamu:
    ```bash
-   git clone https://github.com/username/NEKROLOGI.git
+   git clone https://github.com/zaincyty/N3KR0L0G1.git
    ```
 2. Buka berkas `index.html` langsung di browser favoritmu (tinggal dobel klik atau lewat jalur `file://`).
 3. Selesai, langsung bisa dinikmati deh, udaahhh...!
