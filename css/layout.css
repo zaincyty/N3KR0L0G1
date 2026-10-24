@@ -1655,12 +1655,14 @@ main {
     margin-left: auto;
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 8px;
+    flex-shrink: 0;
   }
 
   .nav__theme-btn {
     padding: 4px 6px;
     font-size: 11px;
+    white-space: nowrap;
   }
 
   .nav__theme-btn .theme-label {
@@ -1668,7 +1670,10 @@ main {
   }
 
   .nav__burger {
-    display: flex;
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    flex-shrink: 0;
   }
 
   .hero__readout {
