@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 226 105">
+  <defs>
+    <style>
+      .logo__ink { fill: #0E0E0E; }
+      .logo__signal { fill: #FF3B1A; }
+      @media (prefers-color-scheme: dark) {
+        .logo__ink { fill: #EFEBE3; }
+      }
+    </style>
+    <clipPath id="logo-n">
+      <path d="M0 2.5L0 102.5L38 102.5L38 46L88 102.5L126 102.5L126 2.5L88 2.5L88 59L38 2.5Z"/>
+    </clipPath>
+  </defs>
+  <path class="logo__ink" d="M0 2.5L0 102.5L38 102.5L38 46L88 102.5L126 102.5L126 2.5L88 2.5L88 59L38 2.5Z"/>
+  <path class="logo__ink" d="M86 2.5L86 102.5L127.2 102.5L127.2 71.9L219.2 2.5L167.5 2.5L127.2 33L127.2 2.5L86 2.5ZM123.4 56.3L170 102.5L223.6 102.5L153.3 33.8L123.4 56.3Z"/>
+  <g clip-path="url(#logo-n)">
+    <path class="logo__signal" d="M86 2.5L86 102.5L127.2 102.5L127.2 71.9L219.2 2.5L167.5 2.5L127.2 33L127.2 2.5L86 2.5ZM123.4 56.3L170 102.5L223.6 102.5L153.3 33.8L123.4 56.3Z"/>
+  </g>
+</svg>

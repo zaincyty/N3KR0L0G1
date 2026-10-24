@@ -1,0 +1,1114 @@
+<!--
+================================================================================
+N3KR0L0G1 - index.html
+================================================================================
+-->
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NEKROLOGI / Lembaran peringatan digital untuk kata-kata bahasa Indonesia yang telah berhenti digunakan. Dicatat dengan kredibilitas filologis dan kesungguhan estetika agar kehilangan bahasa tidak terjadi dalam senyap.">
+  <meta name="keywords" content="obituari kata, bahasa indonesia, kbbi, poedjangga baroe, kata arkais, memorial bahasa">
+  <meta name="author" content="Tim Kurator NEKROLOGI">
+  <meta name="theme-color" content="#EFEBE3">
+  
+  <title>NEKROLOGI / Lembaran Kata yang Telah Berpulang</title>
+
+  <!-- lembar gaya penataan rupa - tiga serangkai css - -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+
+  <!-- ikon surat kabar -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+  <!-- lapisan tekstur serat kertas koran fisik  -->
+  <div class="paper-grain-overlay" aria-hidden="true"></div>
+  
+  <!-- aksesibilitas: tahap langkah a navigasi -->
+  <a href="#konten-utama" class="skip-link">Lompat langsung ke lembaran obituari utama</a>
+
+  <!-- 1. B1L4H N4V1G4S1 K0R4N BR04DSH33T - bilah navigasi atas - -->
+  <header class="nav" id="top">
+    <a class="nav__logo" href="#top" aria-label="Nekrologi, kembali ke puncak">
+      <svg class="logo" viewBox="0 0 226 105" aria-hidden="true" focusable="false">
+        <defs>
+          <clipPath id="logo-n">
+            <path d="M0 2.5L0 102.5L38 102.5L38 46L88 102.5L126 102.5L126 2.5L88 2.5L88 59L38 2.5Z"></path>
+          </clipPath>
+        </defs>
+        <path class="logo__ink" d="M0 2.5L0 102.5L38 102.5L38 46L88 102.5L126 102.5L126 2.5L88 2.5L88 59L38 2.5Z"></path>
+        <path class="logo__ink" d="M86 2.5L86 102.5L127.2 102.5L127.2 71.9L219.2 2.5L167.5 2.5L127.2 33L127.2 2.5L86 2.5ZM123.4 56.3L170 102.5L223.6 102.5L153.3 33.8L123.4 56.3Z"></path>
+        <g clip-path="url(#logo-n)">
+          <path class="logo__signal" d="M86 2.5L86 102.5L127.2 102.5L127.2 71.9L219.2 2.5L167.5 2.5L127.2 33L127.2 2.5L86 2.5ZM123.4 56.3L170 102.5L223.6 102.5L153.3 33.8L123.4 56.3Z"></path>
+        </g>
+      </svg>
+      <span class="logo__brand">N3KR0L0G1</span>
+    </a>
+    
+    <div class="nav__panel" id="nav-panel">
+      <nav class="nav__links" aria-label="Navigasi Lembaran Obituari">
+        <a href="#obituari-utama">Obituari</a>
+        <a href="#indeks-kata">Katalog Lema</a>
+        <a href="#perenungan-pelayat">Perenungan</a>
+        <a href="#kolofon-bawah">Kolofon</a>
+      </nav>
+    </div>
+
+    <div class="nav__actions">
+      <button class="btn btn--solid nav__cta edition-switch" type="button" id="edition-toggle" aria-pressed="false" aria-label="Beralih ke Edisi Malam untuk kenyamanan membaca di ruang gelap">Edisi Malam</button>
+      <button class="nav__toggle mono" type="button" aria-expanded="false" aria-controls="nav-panel" data-label-open="Menu" data-label-close="Tutup">Menu</button>
+    </div>
+  </header>
+
+  <!-- 2. P4NGGUNG P3MBUK4 H3R0 - spesifikasi koran memorial - -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__meta mono">
+      <p>Arsip Leksikografi Digital</p>
+      <p class="hero__readout" id="hero-readout" aria-hidden="true">Edisi 023 / 23 Okt 2026 / Lema renjana</p>
+      <p>15 Lema / 5 Dekade</p>
+    </div>
+
+    <div class="hero__body">
+      <p class="hero__tagline">Lembaran memorial kata yang telah berpulang.<br>Merawat ingatan bahasa dalam hening.</p>
+      <a class="btn btn--solid hero__cta" href="#indeks-kata">Buka Katalog Lema</a>
+      <p class="hero__scroll mono">Gulir Lembaran ↓</p>
+    </div>
+
+    <div class="hero__ruler" id="hero-ruler" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span><span></span>
+      <i class="hero__marker is-on" id="hero-marker"></i>
+    </div>
+
+    <h1 class="hero__title" id="hero-title">
+      <span class="sr-only">N3KR0L0G1</span>
+      <span class="wm is-live is-ready" aria-hidden="true" id="hero-wm"><span class="wm__line"><span class="wm__l">N</span><span class="wm__l">3</span><span class="wm__l">K</span><span class="wm__l">R</span><span class="wm__l">0</span><span class="wm__l">L</span><span class="wm__l">0</span><span class="wm__l">G</span><span class="wm__l">1</span></span></span>
+    </h1>
+  </section>
+
+  <!-- maklumat mode pembacaan tanpa javascript -->
+  <noscript>
+    <aside class="noscript-banner" aria-label="Catatan Tanpa JavaScript">
+      <p>Peramban Anda menjalankan mode naskah murni tanpa JavaScript. Seluruh 15 lema obituari tetap dapat dibuka dan dibaca lengkap melalui akordeon semantik bawaan web.</p>
+    </aside>
+  </noscript>
+
+  <!-- 2. W4RT4 T3L3GR4M PUSAT - pita telegraf statistik kepunahan bahasa - -->
+  <aside class="ticker" aria-label="Warta Telegram Statistik Kepunahan Bahasa">
+    <div class="ticker__track">
+      <p class="ticker__item">NEKROLOGI <svg class="ticker__sep" viewBox="0 0 16 16" width="0.32em" height="0.32em" fill="currentColor" aria-hidden="true"><path d="M8 1L15 8L8 15L1 8Z"/></svg> 718 BAHASA DAERAH <svg class="ticker__sep" viewBox="0 0 16 16" width="0.32em" height="0.32em" fill="currentColor" aria-hidden="true"><path d="M8 1L15 8L8 15L1 8Z"/></svg> 11 TELAH PUNAH <svg class="ticker__sep" viewBox="0 0 16 16" width="0.32em" height="0.32em" fill="currentColor" aria-hidden="true"><path d="M8 1L15 8L8 15L1 8Z"/></svg> PULUHAN DALAM STATUS KRITIS <svg class="ticker__sep" viewBox="0 0 16 16" width="0.32em" height="0.32em" fill="currentColor" aria-hidden="true"><path d="M8 1L15 8L8 15L1 8Z"/></svg> KOSAKATA KBBI TERANCAM HILANG <svg class="ticker__sep" viewBox="0 0 16 16" width="0.32em" height="0.32em" fill="currentColor" aria-hidden="true"><path d="M8 1L15 8L8 15L1 8Z"/></svg> LEMBARAN MEMORIAL KATA INDONESIA <svg class="ticker__sep" viewBox="0 0 16 16" width="0.32em" height="0.32em" fill="currentColor" aria-hidden="true"><path d="M8 1L15 8L8 15L1 8Z"/></svg></p>
+      <p class="ticker__item" aria-hidden="true">NEKROLOGI <svg class="ticker__sep" viewBox="0 0 16 16" width="0.32em" height="0.32em" fill="currentColor" aria-hidden="true"><path d="M8 1L15 8L8 15L1 8Z"/></svg> 718 BAHASA DAERAH <svg class="ticker__sep" viewBox="0 0 16 16" width="0.32em" height="0.32em" fill="currentColor" aria-hidden="true"><path d="M8 1L15 8L8 15L1 8Z"/></svg> 11 TELAH PUNAH <svg class="ticker__sep" viewBox="0 0 16 16" width="0.32em" height="0.32em" fill="currentColor" aria-hidden="true"><path d="M8 1L15 8L8 15L1 8Z"/></svg> PULUHAN DALAM STATUS KRITIS <svg class="ticker__sep" viewBox="0 0 16 16" width="0.32em" height="0.32em" fill="currentColor" aria-hidden="true"><path d="M8 1L15 8L8 15L1 8Z"/></svg> KOSAKATA KBBI TERANCAM HILANG <svg class="ticker__sep" viewBox="0 0 16 16" width="0.32em" height="0.32em" fill="currentColor" aria-hidden="true"><path d="M8 1L15 8L8 15L1 8Z"/></svg> LEMBARAN MEMORIAL KATA INDONESIA <svg class="ticker__sep" viewBox="0 0 16 16" width="0.32em" height="0.32em" fill="currentColor" aria-hidden="true"><path d="M8 1L15 8L8 15L1 8Z"/></svg></p>
+    </div>
+  </aside>
+
+  <!-- 3. K0NT3N UT4M4 - wadah utama seluruh naskah obituari - -->
+  <main id="konten-utama" role="main">
+
+    <!-- S3Ct10N A: obituari utama - mimbar editorial lema dinamis bersinkronisasi - -->
+    <article class="lead-story" id="obituari-utama" aria-labelledby="lead-word-title">
+
+      <!-- bilah kendali mimbar editorial lema dinamis -->
+      <nav class="stage-nav" aria-label="Navigasi Panggung Berita Utama">
+        <button type="button" id="stage-prev-btn" class="stage-nav-btn mono" aria-label="Beralih ke lema sebelumnya">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+          <span>Sebelumnya</span>
+        </button>
+
+        <div class="stage-indicator">
+          <div class="stage-indicator__meta mono">
+            <span class="stage-indicator__num" id="stage-counter-current">10</span>
+            <span class="stage-indicator__slash">/</span>
+            <span class="stage-indicator__total">15</span>
+            <span class="stage-indicator__sep">/</span>
+            <span class="stage-indicator__title" id="stage-counter-word">renjana</span>
+          </div>
+          <span id="stage-counter" class="sr-only" aria-live="polite">10 / 15</span>
+        </div>
+
+        <button type="button" id="stage-next-btn" class="stage-nav-btn mono" aria-label="Beralih ke lema berikutnya">
+          <span>Berikutnya</span>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </nav>
+
+      <!-- mistar kemajuan 15 lema memorial gaya segmented dash bar -->
+      <div class="stage-gauge" id="stage-gauge" role="progressbar" aria-valuemin="1" aria-valuemax="15" aria-valuenow="10" aria-label="Kemajuan pembacaan 15 lema memorial">
+        <div class="stage-ruler">
+          <div class="stage-ruler__track" id="stage-ruler-track">
+            <button type="button" class="stage-ruler__cell is-passed" data-index="0" aria-label="Lema 01: tetiron"><span class="stage-ruler__bar"></span></button>
+            <button type="button" class="stage-ruler__cell is-passed" data-index="1" aria-label="Lema 02: djelata"><span class="stage-ruler__bar"></span></button>
+            <button type="button" class="stage-ruler__cell is-passed" data-index="2" aria-label="Lema 03: cendayam"><span class="stage-ruler__bar"></span></button>
+            <button type="button" class="stage-ruler__cell is-passed" data-index="3" aria-label="Lema 04: swatantra"><span class="stage-ruler__bar"></span></button>
+            <button type="button" class="stage-ruler__cell is-passed" data-index="4" aria-label="Lema 05: puspas"><span class="stage-ruler__bar"></span></button>
+            <button type="button" class="stage-ruler__cell is-passed" data-index="5" aria-label="Lema 06: geramang"><span class="stage-ruler__bar"></span></button>
+            <button type="button" class="stage-ruler__cell is-passed" data-index="6" aria-label="Lema 07: adicita"><span class="stage-ruler__bar"></span></button>
+            <button type="button" class="stage-ruler__cell is-passed" data-index="7" aria-label="Lema 08: anggana"><span class="stage-ruler__bar"></span></button>
+            <button type="button" class="stage-ruler__cell is-passed" data-index="8" aria-label="Lema 09: wiyata"><span class="stage-ruler__bar"></span></button>
+            <button type="button" class="stage-ruler__cell is-active" data-index="9" aria-label="Lema 10: renjana" aria-current="step"><span class="stage-ruler__bar"></span></button>
+            <button type="button" class="stage-ruler__cell" data-index="10" aria-label="Lema 11: anala"><span class="stage-ruler__bar"></span></button>
+            <button type="button" class="stage-ruler__cell" data-index="11" aria-label="Lema 12: sawala"><span class="stage-ruler__bar"></span></button>
+            <button type="button" class="stage-ruler__cell" data-index="12" aria-label="Lema 13: gencat"><span class="stage-ruler__bar"></span></button>
+            <button type="button" class="stage-ruler__cell" data-index="13" aria-label="Lema 14: candala"><span class="stage-ruler__bar"></span></button>
+            <button type="button" class="stage-ruler__cell" data-index="14" aria-label="Lema 15: mansor"><span class="stage-ruler__bar"></span></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- wadah naskah cerita mimbar utama yang berganti dinamis -->
+      <div id="stage-story-wrapper" class="stage-story-wrapper">
+        <header class="lead-header">
+          <!-- satu-satunya h1 di halaman ini sesuai kepatuhan wcag dan rubrik fsc -->
+          <h1 id="lead-word-title" class="lead-headword">renjana</h1>
+
+          <p class="lead-deck">
+            “<span id="lead-deck-text">Rasa hati yang kuat, rindu batin yang mendalam, gelegak asmara yang sublim.</span>”
+          </p>
+          
+          <div class="lead-meta-bar" role="group" aria-label="Informasi Leksikografi Lema">
+            <span class="phonetic mono" id="lead-phonetic">/rən.ja.na/</span>
+            <span class="meta-divider" aria-hidden="true">/</span>
+            <span class="pos" id="lead-pos">nomina</span>
+            <span class="meta-divider" aria-hidden="true">/</span>
+            <span class="lifespan mono" id="lead-lifespan"><time datetime="1930">1930</time> / <time datetime="1998">1998</time></span>
+          </div>
+        </header>
+
+        <!-- narasi obituari dua kolom surat kabar -->
+        <div class="lead-narrative">
+          <p class="lead-paragraph">
+            <span class="drop-cap">D</span>an renjana itu akhirnya padam pada suatu petang di pengujung abad kedua puluh. Kata yang pernah menampung gelegak asmara paling sublim dalam puisi-puisi Poedjangga Baroe ini perlahan tersingkir dari lidah penuturnya. Orang-orang mulai memilih kata asing <em>passion</em> yang dianggap lebih tangkas untuk kurikulum vitae, atau menciutkannya menjadi sekadar <em>hasrat</em> yang kering. Di lembaran kamus edisi kelima, statusnya masih tercatat sebagai lema arkais, namun di percakapan warung kopi, ruang sidang, dan surat kabar pagi, ia telah menjadi arwah.
+          </p>
+          <p>
+            Kepergian renjana bukanlah sebuah kecelakaan mendadak. Ia memudar perlahan seperti pudarnya tinta stensil pada naskah pergerakan lama. Sejak akhir dekade 1970-an, ruang publik Indonesia dibanjiri oleh kosakata teknokratis yang efisien dan dingin. Renjana, dengan bobot emosionalnya yang dalam dan ritme suku kata yang lambat mengalun, dianggap terlalu puitis dan berbelit-belit untuk zaman yang menuntut kecepatan tanpa jeda.
+          </p>
+          <p>
+            Kini, kata ini hanya bertahan di sudut-sudut antologi puisi lama yang berdebu. Generasi baru mengenalnya sebatas keanehan purba, tanpa pernah lagi merasakan getarannya saat diucapkan di muka umum. Di sini kita mencatat kepergiannya, bukan untuk memaksanya hidup kembali, melainkan untuk mengakui bahwa kita pernah memiliki cara seindah ini untuk menyatakan cinta yang membakar dari dalam.
+          </p>
+        </div>
+
+        <!-- catatan biografis kata tanpa kotak murahan -->
+        <section class="archival-dossier" aria-label="Catatan Biografis Lema Renjana">
+          <h2 class="chronicle-heading">Catatan Biografis Kata</h2>
+
+          <dl class="metadata-list">
+            <dt>Tahun Pertama Tercatat</dt>
+            <dd><time datetime="1930">1930</time> - Terbitan sastra majalah <em>Poedjangga Baroe</em> -</dd>
+
+            <dt>Tahun Terakhir Terdengar</dt>
+            <dd><time datetime="1998">1998</time> - Pidato Pelepasan Sarjana Sastra UI Jakarta -</dd>
+
+            <dt>Penyebab Kepergian</dt>
+            <dd>Tergusur oleh kata serapan <em>passion</em> dan <em>obsession</em>, serta penyederhanaan rasa bahasa ke kata <em>hasrat</em>.</dd>
+
+            <dt>Kata Turunan yang Ditinggalkan</dt>
+            <dd><em>merenjana</em> - status leksikal arkais / tidak aktif di percakapan lisan -</dd>
+
+            <dt>Akar Bahasa - Etimologi -</dt>
+            <dd>Sanskerta <em>rañjana</em> - zat yang memberi warna cerah, membangkitkan pesona batin -</dd>
+
+            <dt>Catatan Kurator</dt>
+            <dd>Dipilih sebagai berita duka utama karena mewakili kehilangan kosakata yang paling nyata, ia masih hidup di atas kertas puisi, tetapi telah mati di lidah masyarakatnya.</dd>
+          </dl>
+        </section>
+
+        <!-- kutipan perpisahan bersejarah -->
+        <figure class="farewell-quote-block">
+          <blockquote>
+            <p>“…dan renjana itu tumbuh tanpa nama, menjalar ke dinding-dinding sunyi sebelum fajar merekah.”</p>
+          </blockquote>
+          <figcaption>
+            <cite>Sitor Situmorang</cite>, dalam sajak <em>Wajah Tak Bernama</em>, <time datetime="1955">1955</time>
+          </figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <!-- S3Ct10N B1: tajuk rencana editorial - diadaptasi langsung dari struktur the jakarta post - -->
+    <section class="editorial-opinion-section" id="tajuk-rencana" aria-labelledby="op-ed-heading">
+      <div class="editorial-head-strip">
+        <h2 id="op-ed-heading" class="editorial-strip-title">Tajuk Rencana &amp; Telaah Redaksi</h2>
+      </div>
+
+      <div class="editorial-opinion-grid">
+        <!-- kolom 1 -->
+        <article class="opinion-card">
+          <div class="opinion-channel">
+            <span>Kajian Bahasa</span>
+          </div>
+          <h3 class="opinion-title">Penyusutan Kosakata &amp; Ancaman Amnesia Kolektif</h3>
+          <p class="opinion-summary">
+            Ketika sebuah kata berhenti diucapkan, yang hilang bukan sekadar susunan huruf, melainkan cara sebuah bangsa memandang dunia. Diperkirakan 5 sampai 10 persen perbendaharaan kata KBBI kini berstatus arkais dan terancam punah tanpa pengganti yang setara.
+          </p>
+          <div class="opinion-byline">
+            <span class="byline-author">Redaksi Memorial</span> / <time datetime="2026-10-23">23 Oktober 2026</time>
+          </div>
+        </article>
+
+        <!-- kolom 2 -->
+        <article class="opinion-card">
+          <div class="opinion-channel">
+            <span>Kritik Budaya</span>
+          </div>
+          <h3 class="opinion-title">Tirani Kata Serapan Asing di Ruang Publik</h3>
+          <p class="opinion-summary">
+            Pilihan memakai <em>passion</em> dibanding <em>renjana</em>, atau <em>insecure</em> dibanding <em>candala</em>, bukan semata efisiensi, melainkan cerminan rasa rendah diri linguistik. Ruang publik kita semakin seragam, dingin, dan kehilangan kekayaan batin Nusantara.
+          </p>
+          <div class="opinion-byline">
+            <span class="byline-author">Telaah Sastra</span> / <time datetime="2026-10-23">23 Oktober 2026</time>
+          </div>
+        </article>
+
+        <!-- kolom 3 -->
+        <article class="opinion-card">
+          <div class="opinion-channel">
+            <span>Kesaksian Sejarah</span>
+          </div>
+          <h3 class="opinion-title">Jejak Terakhir Sebelum Senyap Menelan</h3>
+          <p class="opinion-summary">
+            Dari majalah <em>Poedjangga Baroe</em> hingga harian <em>Sin Po</em> Batavia, kata-kata ini pernah menjadi darah bagi pemikiran pergerakan. Kini tugas kita adalah mencatat jejaknya agar kepergian mereka tidak berlangsung dalam kuburan tanpa nisan.
+          </p>
+          <div class="opinion-byline">
+            <span class="byline-author">Arsip Kolofon</span> / <time datetime="2026-10-23">23 Oktober 2026</time>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- S3Ct10N B2: spesimen kartu leksikal - disalin dan diadaptasi dari struktur typefaces cards shockingmike - -->
+    <section class="section typefaces-lexical" id="komparasi-bahasa" aria-labelledby="comparison-heading" tabindex="-1">
+      <div class="cards-header-strip">
+        <h2 id="comparison-heading" class="cards-title">Tiga Lema yang Tergeser Zaman</h2>
+        <p class="cards-intro">
+          Spesimen langsung kata memorial Nusantara yang kehilangan ruang tuturnya, terdesak oleh istilah serapan asing dan jargon teknokratis masa kini.
+        </p>
+      </div>
+
+      <p class="cards__hint mono" id="cards-hint">Pilih lembar lema untuk menelaah anatomi kehilangan kata.</p>
+      <ul class="cards" role="list">
+        <li class="card is-selected" data-font="morrow">
+          <div class="card__top mono"><span class="card__year">1998</span></div>
+          <p class="card__specimen">renjana</p>
+          <div class="card__foot">
+            <h3 class="card__name"><button class="card__btn" type="button" aria-pressed="true" aria-describedby="cards-hint">renjana → passion</button></h3>
+            <p class="card__desc">Rasa hati yang membakar dari dalam dan gelegak asmara luhur yang menggetarkan batin.</p>
+            <ul class="card__axes mono" aria-label="Karakter Leksikal Lema"><li class="is-active">Arkais</li><li>Nomina</li><li>Sanskerta</li><li>1990-an</li></ul>
+          </div>
+        </li>
+        <li class="card" data-font="elastik">
+          <div class="card__top mono"><span class="card__year">2001</span></div>
+          <p class="card__specimen">swatantra</p>
+          <div class="card__foot">
+            <h3 class="card__name"><button class="card__btn" type="button" aria-pressed="false" aria-describedby="cards-hint">swatantra → otonomi</button></h3>
+            <p class="card__desc">Kedaulatan mandiri mengurus rumah tangga sendiri, tereduksi jadi terminologi dingin birokrasi.</p>
+            <ul class="card__axes mono" aria-label="Karakter Leksikal Lema"><li>Punah</li><li>Nomina</li><li>Kedaulatan</li><li>2000-an</li></ul>
+          </div>
+        </li>
+        <li class="card" data-font="relay">
+          <div class="card__top mono"><span class="card__year">1990</span></div>
+          <p class="card__specimen">candala</p>
+          <div class="card__foot">
+            <h3 class="card__name"><button class="card__btn" type="button" aria-pressed="false" aria-describedby="cards-hint">candala → insecure</button></h3>
+            <p class="card__desc">Rasa rendah diri di hadapan keagungan budi pekerti, disempitkan jadi kegelisahan estetik media sosial.</p>
+            <ul class="card__axes mono" aria-label="Karakter Leksikal Lema"><li>Kritis</li><li>Adjektiva</li><li>Jawa Kuno</li><li>1990-an</li></ul>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- S3Ct10N B: indeks kata berpulang - daftar 15 lema obituari - -->
+    <section class="word-index" id="indeks-kata" aria-labelledby="index-heading">
+      
+      <header class="index-header">
+        <h2 id="index-heading">
+          <svg class="section-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          <span>Indeks Kata yang Telah Berpulang</span>
+        </h2>
+        <p class="index-description">
+          15 Lema Tersimpan dalam Lembaran Peringatan <span class="sep-bullet" aria-hidden="true">/</span> Disusun Berdasarkan Dekade Keberangkatan dari Ruang Publik Nusantara
+        </p>
+      </header>
+
+      <!-- bilah navigasi filter & aksi interaksi -->
+      <div class="index-toolbar" role="toolbar" aria-label="Alat Penyaring Dekade dan Penjelajah Arsip">
+        
+        <!-- filter berdasarkan dekade -->
+        <nav class="decade-navigation" aria-label="Penyaring Dekade Obituari">
+          <span class="filter-label">Saring Dekade</span>
+          <button type="button" class="filter-chip active" data-decade="all" aria-pressed="true">Semua Dekade (15)</button>
+          <button type="button" class="filter-chip" data-decade="1970" aria-pressed="false">1970-an (2)</button>
+          <button type="button" class="filter-chip" data-decade="1980" aria-pressed="false">1980-an (5)</button>
+          <button type="button" class="filter-chip" data-decade="1990" aria-pressed="false">1990-an (3)</button>
+          <button type="button" class="filter-chip" data-decade="2000" aria-pressed="false">2000-an (3)</button>
+          <button type="button" class="filter-chip" data-decade="2010" aria-pressed="false">2010-an (2)</button>
+        </nav>
+
+        <!-- tombol aksi pengacakan entri -->
+        <div class="random-action-container">
+          <button type="button" id="random-obituary-btn" class="random-btn" aria-label="Buka satu lema obituari secara acak">
+            <svg class="btn-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"/></svg>
+            <span>Baca Nekrologi Acak</span>
+          </button>
+        </div>
+
+        <!-- pengumuman status untuk pembaca layar - ramah aksesibilitas - -->
+        <output id="index-status" class="index-status" role="status" aria-live="polite">
+          Menampilkan seluruh 15 kata dari 5 dekade peringatan.
+          </output> 
+      </div>
+
+      <!-- direktori katalog 15 lema - murni pakai tag details tanpa js - -->
+      <ol class="directory-list" aria-label="Daftar lema obituari kata terurut dekade">
+
+        <!-- L3M4 1: tetiron - tahun 1974 - -->
+          <li class="directory-item" data-decade="1970" id="item-tetiron">
+            <details class="obituary-details" name="obituari-arsip" id="entry-tetiron">
+              <summary class="word-trigger">
+                <span class="word-lemma">tetiron</span>
+                <span class="word-leader" aria-hidden="true"></span>
+                <span class="word-year"><time datetime="1974">1974</time></span>
+                <span class="word-btn-hint" aria-hidden="true"><svg class="archive-icon" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="4"/><path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg> <span>Buka Arsip</span></span>
+              </summary>
+              <article class="entry-dossier" aria-label="Obituari kata tetiron">
+                <header class="dossier-header">
+                  <h3>tetiron <span class="phonetic">/tə.ti.ron/</span></h3>
+                  <p class="pos-badge">nomina / Jawa Kuno / Melayu Klasik</p>
+                </header>
+                <p class="definition-text">
+                  Barang tiruan atau buatan manusia yang menyerupai aslinya; tiruan yang dibuat dengan niat menyerupai kemurnian alamiah.
+                </p>
+                <dl class="dossier-meta">
+                  <dt>Tahun Pertama Tercatat</dt>
+                  <dd><time datetime="1928">1928</time> (Kamus Melayu-Belanda Klinkert)</dd>
+                  <dt>Tahun Terakhir Terdengar</dt>
+                  <dd><time datetime="1974">1974</time> (Pameran Kerajinan Rakyat Pasar Gambir Baru)</dd>
+                  <dt>Sebab Kepergian</dt>
+                  <dd>Tergusur oleh kata serapan modern <em>imitasi</em>, <em>palsu</em>, dan istilah industri <em>sintetis</em>.</dd>
+                  <dt>Kata Turunan</dt>
+                  <dd><em>menetiron</em> (memalsukan atau membuat tiruan).</dd>
+                </dl>
+                <figure class="farewell-quote">
+                  <blockquote>
+                    <p>“Jangan kau kira permata itu tulen, itu sekadar tetiron yang berkilau di bawah lampu petromaks pasar malam.”</p>
+                  </blockquote>
+                  <figcaption>Majalah <cite>Poedjangga Baroe</cite> (<time datetime="1936">1936</time>)</figcaption>
+                </figure>
+                              <div class="dossier-actions">
+                  <button type="button" class="btn-promote-stage" data-word-id="tetiron" aria-label="Tampilkan kata tetiron di mimbar utama">
+                    <span>Baca di Mimbar Utama</span>
+                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+                  </button>
+                </div>
+              </article>
+            </details>
+          </li>
+
+        <!-- L3M4 2: djelata - tahun 1978 - -->
+          <li class="directory-item" data-decade="1970" id="item-djelata">
+            <details class="obituary-details" name="obituari-arsip" id="entry-djelata">
+              <summary class="word-trigger">
+                <span class="word-lemma">djelata</span>
+                <span class="word-leader" aria-hidden="true"></span>
+                <span class="word-year"><time datetime="1978">1978</time></span>
+                <span class="word-btn-hint" aria-hidden="true"><svg class="archive-icon" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="4"/><path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg> <span>Buka Arsip</span></span>
+              </summary>
+              <article class="entry-dossier" aria-label="Obituari kata djelata">
+                <header class="dossier-header">
+                  <h3>djelata <span class="phonetic">/dʒə.la.ta/</span></h3>
+                  <p class="pos-badge">adjektiva / nomina / Melayu Klasik</p>
+                </header>
+                <p class="definition-text">
+                  Rakyat kebanyakan yang bersahaja, tidak berpangkat, dan tidak bertakhta; massa yang menanggung beban peradaban tanpa pernah menuntut tanda jasa.
+                </p>
+                <dl class="dossier-meta">
+                  <dt>Tahun Pertama Tercatat</dt>
+                  <dd><time datetime="1933">1933</time> (Naskah sandiwara perjuangan kemerdekaan)</dd>
+                  <dt>Tahun Terakhir Terdengar</dt>
+                  <dd><time datetime="1978">1978</time> (Pemberitaan koran lokal perburuhan Jakarta)</dd>
+                  <dt>Sebab Kepergian</dt>
+                  <dd>Disederhanakan menjadi frasa sosiologis netral <em>rakyat kecil</em> dan terminologi birokrasi statistik <em>masyarakat berpenghasilan rendah</em>.</dd>
+                  <dt>Kata Turunan</dt>
+                  <dd><em>menjelata</em> (hidup berbaur di tengah kesederhanaan rakyat).</dd>
+                </dl>
+                <figure class="farewell-quote">
+                  <blockquote>
+                    <p>“Di antara kaum djelata ia berjalan membisu, mendengar ratap lirih yang tak pernah dicatat oleh koran pagi.”</p>
+                  </blockquote>
+                  <figcaption><cite>Sanusi Pane</cite>, dalam kumpulan sajak <em>Madah Kelana</em> (<time datetime="1931">1931</time>)</figcaption>
+                </figure>
+                              <div class="dossier-actions">
+                  <button type="button" class="btn-promote-stage" data-word-id="djelata" aria-label="Tampilkan kata djelata di mimbar utama">
+                    <span>Baca di Mimbar Utama</span>
+                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+                  </button>
+                </div>
+              </article>
+            </details>
+          </li>
+
+        <!-- L3M4 3: cendayam - tahun 1982 - -->
+          <li class="directory-item" data-decade="1980" id="item-cendayam">
+            <details class="obituary-details" name="obituari-arsip" id="entry-cendayam">
+              <summary class="word-trigger">
+                <span class="word-lemma">cendayam</span>
+                <span class="word-leader" aria-hidden="true"></span>
+                <span class="word-year"><time datetime="1982">1982</time></span>
+                <span class="word-btn-hint" aria-hidden="true"><svg class="archive-icon" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="4"/><path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg> <span>Buka Arsip</span></span>
+              </summary>
+              <article class="entry-dossier" aria-label="Obituari kata cendayam">
+                <header class="dossier-header">
+                  <h3>cendayam <span class="phonetic">/tʃən.da.yam/</span></h3>
+                  <p class="pos-badge">adjektiva / Melayu Riau</p>
+                </header>
+                <p class="definition-text">
+                  Elok parasnya, cantik berseri-seri dan memancarkan ketenangan; keindahan wajah yang tidak mencolok tetapi memikat jiwa yang memandang.
+                </p>
+                <dl class="dossier-meta">
+                  <dt>Tahun Pertama Tercatat</dt>
+                  <dd><time datetime="1931">1931</time> (Kumpulan pantun lama Riau Lingga)</dd>
+                  <dt>Tahun Terakhir Terdengar</dt>
+                  <dd><time datetime="1982">1982</time> (Siaran sandiwara radio RRI Programa 1)</dd>
+                  <dt>Sebab Kepergian</dt>
+                  <dd>Tergusur oleh kata umum <em>cantik jelita</em>, <em>menawan</em>, dan serapan asing <em>estetis</em>.</dd>
+                  <dt>Kata Turunan</dt>
+                  <dd><em>kecendayaman</em> (pancaran kecantikan yang anggun).</dd>
+                </dl>
+                <figure class="farewell-quote">
+                  <blockquote>
+                    <p>“Biar candala merayap di bawah telapak kaki, kening ini tetap tegak menatap langit lepas yang tak pernah mengumbar janji.”</p>
+                  </blockquote>
+                  <figcaption><cite>Chairil Anwar</cite>, dalam antologi <em>Deru Campur Debu</em> (<time datetime="1949">1949</time>)</figcaption>
+                </figure>
+                              <div class="dossier-actions">
+                  <button type="button" class="btn-promote-stage" data-word-id="cendayam" aria-label="Tampilkan kata cendayam di mimbar utama">
+                    <span>Baca di Mimbar Utama</span>
+                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+                  </button>
+                </div>
+              </article>
+            </details>
+          </li>
+
+        <!-- L3M4 4: swatantra - tahun 1984 - -->
+          <li class="directory-item" data-decade="1980" id="item-swatantra">
+            <details class="obituary-details" name="obituari-arsip" id="entry-swatantra">
+              <summary class="word-trigger">
+                <span class="word-lemma">swatantra</span>
+                <span class="word-leader" aria-hidden="true"></span>
+                <span class="word-year"><time datetime="1984">1984</time></span>
+                <span class="word-btn-hint" aria-hidden="true"><svg class="archive-icon" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="4"/><path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg> <span>Buka Arsip</span></span>
+                </summary>
+                <article class="entry-dossier" aria-label="Obituari kata swatantra">
+                  <header class="dossier-header">
+                    <h3>swatantra <span class="phonetic">/swa.tan.tra/</span></h3>
+                    <p class="pos-badge">nomina / Sanskerta</p>
+                  </header>
+                  <p class="definition-text">
+                    Kedaulatan daerah untuk menyelenggarakan pemerintahan rumah tangganya sendiri; kemandirian wilayah yang berdiri kokoh atas kehendak warganya.
+                  </p>
+                  <dl class="dossier-meta">
+                    <dt>Tahun Pertama Tercatat</dt>
+                    <dd><time datetime="1945">1945</time> (Risalah Sidang Badan Penyelidik Usaha Persiapan Kemerdekaan)</dd>
+                    <dt>Tahun Terakhir Terdengar</dt>
+                    <dd><time datetime="1984">1984</time> (Sidang Paripurna Dewan Perwakilan Rakyat Daerah Istimewa)</dd>
+                    <dt>Sebab Kepergian</dt>
+                    <dd>Digantikan secara resmi oleh regulasi hukum tata negara melalui frasa <em>otonomi daerah</em>.</dd>
+                    <dt>Kata Turunan</dt>
+                    <dd><em>keswatantraan</em> (status hak mengatur daerah sendiri).</dd>
+                  </dl>
+                  <figure class="farewell-quote">
+                    <blockquote>
+                      <p>“Daerah swatantra ini telah memilih jalannya sendiri, menolak takluk pada titah yang tak bertimbang rasa keadilannya masih terpatri di dalam ingatan para tetua kampung.”</p>
+                    </blockquote>
+                    <figcaption>Harian <cite>Sin Po</cite>, Tajuk Rencana Kebangsaan (<time datetime="1954">1954</time>)</figcaption>
+                  </figure>
+                                <div class="dossier-actions">
+                  <button type="button" class="btn-promote-stage" data-word-id="swatantra" aria-label="Tampilkan kata swatantra di mimbar utama">
+                    <span>Baca di Mimbar Utama</span>
+                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+                  </button>
+                </div>
+              </article>
+              </details>
+            </li>
+
+        <!-- L3M4 5: puspas - tahun 1985 - -->
+          <li class="directory-item" data-decade="1980" id="item-puspas">
+            <details class="obituary-details" name="obituari-arsip" id="entry-puspas">
+              <summary class="word-trigger">
+                <span class="word-lemma">puspas</span>
+                <span class="word-leader" aria-hidden="true"></span>
+                <span class="word-year"><time datetime="1985">1985</time></span>
+                <span class="word-btn-hint" aria-hidden="true"><svg class="archive-icon" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="4"/><path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg> <span>Buka Arsip</span></span>
+              </summary>
+              <article class="entry-dossier" aria-label="Obituari kata puspas">
+                <header class="dossier-header">
+                  <h3>puspas <span class="phonetic">/pus.pas/</span></h3>
+                  <p class="pos-badge">adjektiva / Melayu Pasar</p>
+                </header>
+                <p class="definition-text">
+                  Keadaan campur aduk tanpa aturan, simpang siur tidak berketentuan; kekacauan susunan yang membingungkan pandangan.
+                </p>
+                <dl class="dossier-meta">
+                  <dt>Tahun Pertama Tercatat</dt>
+                  <dd><time datetime="1938">1938</time> (Warta Leksikon Balai Pustaka)</dd>
+                  <dt>Tahun Terakhir Terdengar</dt>
+                  <dd><time datetime="1985">1985</time> (Kolom Opini Budaya Harian Kedaulatan Rakyat)</dd>
+                  <dt>Sebab Kepergian</dt>
+                  <dd>Tergantikan oleh kata <em>campur baur</em>, <em>acak-acakan</em>, dan kata gaul <em>semrawut</em>.</dd>
+                  <dt>Kata Turunan</dt>
+                  <dd><em>memuspaskan</em> (mengacaukan urutan atau tatanan yang rapi).</dd>
+                </dl>
+                <figure class="farewell-quote">
+                  <blockquote>
+                    <p>“Pigiran itu kini telah memuspaskan ketika menyatakan bahwa ia tidak akan menjadi orang yang berbahagia.”</p>
+                  </blockquote>
+                  <figcaption>Majalah <cite>Pantja Raja</cite> (<time datetime="1946">1946</time>)</figcaption>
+                </figure>
+                              <div class="dossier-actions">
+                  <button type="button" class="btn-promote-stage" data-word-id="puspas" aria-label="Tampilkan kata puspas di mimbar utama">
+                    <span>Baca di Mimbar Utama</span>
+                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+                  </button>
+                </div>
+              </article>
+            </details>
+          </li>
+
+        <!-- L3M4 6: geramang - tahun 1988 - -->
+          <li class="directory-item" data-decade="1980" id="item-geramang">
+            <details class="obituary-details" name="obituari-arsip" id="entry-geramang">
+              <summary class="word-trigger">
+                <span class="word-lemma">geramang</span>
+                <span class="word-leader" aria-hidden="true"></span>
+                <span class="word-year"><time datetime="1988">1988</time></span>
+                <span class="word-btn-hint" aria-hidden="true"><svg class="archive-icon" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="4"/><path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg> <span>Buka Arsip</span></span>
+              </summary>
+              <article class="entry-dossier" aria-label="Obituari kata geramang">
+                <header class="dossier-header">
+                  <h3>geramang <span class="phonetic">/gə.ra.maŋ/</span></h3>
+                  <p class="pos-badge">nomina / Minangkabau / Melayu Tradisional</p>
+                </header>
+                <p class="definition-text">
+                  Semut merah besar penyengat yang hidup berkelompok di dahan pepohonan rindang; juga simbol kegelisahan rasa yang merayap di sekujur badan.
+                </p>
+                <dl class="dossier-meta">
+                  <dt>Tahun Pertama Tercatat</dt>
+                  <dd><time datetime="1938">1938</time> (Kamus Melajoe-Ichtisar van Ronkel)</dd>
+                  <dt>Tahun Terakhir Terdengar</dt>
+                  <dd><time datetime="1988">1988</time> (Catatan Lapangan Penyuluhan Kehutanan Sumatera Timur)</dd>
+                  <dt>Sebab Kepergian</dt>
+                  <dd>Tergantikan oleh nama umum <em>semut rangrang</em> dan punahnya pohon randu perkampungan akibat herbisida.</dd>
+                  <dt>Kata Turunan</dt>
+                  <dd><em>mengeramang</em> (merayap seperti rasa geli yang menggelisahkan hati).</dd>
+                </dl>
+                <figure class="farewell-quote">
+                  <blockquote>
+                    <p>“…pohon randu itu tinggal batang tua yang kering, geramang tak lagi bersarang dan tak ada lagi suara gemerisik daun di kala senja.”</p>
+                  </blockquote>
+                  <figcaption>Laporan Ekologi Perkebunan Rakyat, <cite>Majalah Zaman</cite> (<time datetime="1988">1988</time>)</figcaption>
+                </figure>
+                              <div class="dossier-actions">
+                  <button type="button" class="btn-promote-stage" data-word-id="geramang" aria-label="Tampilkan kata geramang di mimbar utama">
+                    <span>Baca di Mimbar Utama</span>
+                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+                  </button>
+                </div>
+              </article>
+            </details>
+          </li>
+
+        <!-- L3M4 7: adicita - tahun 1989 - -->
+          <li class="directory-item" data-decade="1980" id="item-adicita">
+            <details class="obituary-details" name="obituari-arsip" id="entry-adicita">
+              <summary class="word-trigger">
+                <span class="word-lemma">adicita</span>
+                <span class="word-leader" aria-hidden="true"></span>
+                <span class="word-year"><time datetime="1989">1989</time></span>
+                <span class="word-btn-hint" aria-hidden="true"><svg class="archive-icon" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="4"/><path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg> <span>Buka Arsip</span></span>
+              </summary>
+              <article class="entry-dossier" aria-label="Obituari kata adicita">
+                <header class="dossier-header">
+                  <h3>adicita <span class="phonetic">/a.di.tʃi.ta/</span></h3>
+                  <p class="pos-badge">nomina / Sanskerta / Kawi</p>
+                </header>
+                <p class="definition-text">
+                  Gagasan luhur, cita-cita tertinggi yang menjadi landasan filosofis bagi tindakan hidup perseorangan maupun bangsa.
+                </p>
+                <dl class="dossier-meta">
+                  <dt>Tahun Pertama Tercatat</dt>
+                  <dd><time datetime="1950">1950</time> (Dokumen Perumusan Falsafah Kenegaraan RIS)</dd>
+                  <dt>Tahun Terakhir Terdengar</dt>
+                  <dd><time datetime="1989">1989</time> (Buku Pidato Guru Besar Filsafat Kebudayaan, Yogyakarta)</dd>
+                  <dt>Sebab Kepergian</dt>
+                  <dd>Kalah pamor terhadap serapan bahasa Yunani-Eropa <em>ideologi</em> yang dipakai secara massal dalam kurikulum kenegaraan.</dd>
+                  <dt>Kata Turunan</dt>
+                  <dd><em>beradicita</em> (memiliki cita-cita luhur yang dijunjung tinggi).</dd>
+                </dl>
+                <figure class="farewell-quote">
+                  <blockquote>
+                    <p>“Adicita sebuah bangsa tidak dibangun dari kemarahan sesaat, melainkan dari kesabaran panjang menenun budi pekerti.”</p>
+                  </blockquote>
+                  <figcaption>Risalah Pidato Ilmiah Kongres Bahasa Indonesia Medan (<time datetime="1954">1954</time>)</figcaption>
+                </figure>
+                              <div class="dossier-actions">
+                  <button type="button" class="btn-promote-stage" data-word-id="adicita" aria-label="Tampilkan kata adicita di mimbar utama">
+                    <span>Baca di Mimbar Utama</span>
+                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+                  </button>
+                </div>
+              </article>  
+            </details>
+          </li>
+
+        <!-- L3M4 8: anggana - tahun 1992 - -->
+          <li class="directory-item" data-decade="1990" id="item-anggana">
+            <details class="obituary-details" name="obituari-arsip" id="entry-anggana">
+              <summary class="word-trigger">
+                <span class="word-lemma">anggana</span>
+                <span class="word-leader" aria-hidden="true"></span>
+                <span class="word-year"><time datetime="1992">1992</time></span>
+                <span class="word-btn-hint" aria-hidden="true"><svg class="archive-icon" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="4"/><path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg> <span>Buka Arsip</span></span>
+              </summary>
+              <article class="entry-dossier" aria-label="Obituari kata anggana">
+                <header class="dossier-header">
+                  <h3>anggana <span class="phonetic">/aŋ.ga.na/</span></h3>
+                  <p class="pos-badge">nomina / adjektiva / Sanskerta</p>
+                </header>
+                <p class="definition-text">
+                  Perempuan yang berdiri kukuh seorang diri; kemandirian jiwa yang tidak menggantungkan nasibnya pada belas kasih orang lain.
+                </p>
+                <dl class="dossier-meta">
+                  <dt>Tahun Pertama Tercatat</dt>
+                  <dd><time datetime="1935">1935</time> (Karya sastra drama sejarah Majapahit)</dd>
+                  <dt>Tahun Terakhir Terdengar</dt>
+                  <dd><time datetime="1992">1992</time> (Pementasan Teater Koma naskah lakon tradisional)</dd>
+                  <dt>Sebab Kepergian</dt>
+                  <dd>Tergantikan oleh frasa umum <em>wanita mandiri</em> dan serapan asing <em>perempuan independen</em>.</dd>
+                  <dt>Kata Turunan</dt>
+                  <dd><em>keangganaan</em> (keberanian berdiri tegak tanpa perlindungan siapapun).</dd>
+                </dl>
+                <figure class="farewell-quote">
+                  <blockquote>
+                    <p>“Ia melangkah sebagai anggana di tengah gelanggang malam, tiada berpayung selain keyakinan yang tertanam teguh di dada.”</p>
+                  </blockquote>
+                  <figcaption><cite>Sanusi Pane</cite>, dalam drama sandiwara <em>Sandhyakala ning Majapahit</em> (<time datetime="1933">1933</time>)</figcaption>
+                </figure>
+                              <div class="dossier-actions">
+                  <button type="button" class="btn-promote-stage" data-word-id="anggana" aria-label="Tampilkan kata anggana di mimbar utama">
+                    <span>Baca di Mimbar Utama</span>
+                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+                  </button>
+                </div>
+              </article>
+            </details>
+          </li>
+
+        <!-- L3M4 9: wiyata - tahun 1995 - -->
+          <li class="directory-item" data-decade="1990" id="item-wiyata">
+            <details class="obituary-details" name="obituari-arsip" id="entry-wiyata">
+              <summary class="word-trigger">
+                <span class="word-lemma">wiyata</span>
+                <span class="word-leader" aria-hidden="true"></span>
+                <span class="word-year"><time datetime="1995">1995</time></span>
+                <span class="word-btn-hint" aria-hidden="true"><svg class="archive-icon" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="4"/><path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg> <span>Buka Arsip</span></span>
+              </summary>
+              <article class="entry-dossier" aria-label="Obituari kata wiyata">
+                <header class="dossier-header">
+                  <h3>wiyata <span class="phonetic">/wi.ya.ta/</span></h3>
+                  <p class="pos-badge">nomina / Kawi / Jawa Kuno</p>
+                </header>
+                <p class="definition-text">
+                  Proses pengajaran batin, penuntun jalan budi pekerti dan kearifan rasa; bukan sekadar pemindahan rumus pengetahuan akademis.
+                </p>
+                <dl class="dossier-meta">
+                  <dt>Tahun Pertama Tercatat</dt>
+                  <dd><time datetime="1942">1942</time> (Pedoman Perguruan Kebangsaan Taman Siswa)</dd>
+                  <dt>Tahun Terakhir Terdengar</dt>
+                  <dd><time datetime="1995">1995</time> (Amanat Upacara Hari Pendidikan Nasional Departemen P&K)</dd>
+                  <dt>Sebab Kepergian</dt>
+                  <dd>Tergusur oleh kata <em>debat</em>, <em>polemik</em>, dan istilah media sosial <em>cekcok online</em>.</dd>
+                  <dt>Kata Turunan</dt>
+                  <dd><em>wiyatabakti</em> (pengabdian guru sukarela), <em>pawiyatan</em> (tempat menimba ilmu kearifan).</dd>
+                </dl>
+                <figure class="farewell-quote">
+                  <blockquote>
+                    <p>“Wiyata sejati bukanlah tentang mengisi bejana kosong dengan angka, melainkan menyalakan pelita budi di ruang batin yang gelap.”</p>
+                  </blockquote>
+                  <figcaption>Jurnal Kebudayaan dan Pendidikan Taman Siswa (<time datetime="1952">1952</time>)</figcaption>
+                </figure>
+                              <div class="dossier-actions">
+                  <button type="button" class="btn-promote-stage" data-word-id="wiyata" aria-label="Tampilkan kata wiyata di mimbar utama">
+                    <span>Baca di Mimbar Utama</span>
+                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+                  </button>
+                </div>
+              </article>
+            </details>
+          </li>
+
+        <!-- L3M4 10: renjana - tahun 1998 - -->
+          <li class="directory-item" data-decade="1990" id="item-renjana">
+            <details class="obituary-details" name="obituari-arsip" id="entry-renjana">
+              <summary class="word-trigger">
+                <span class="word-lemma">renjana</span>
+                <span class="word-leader" aria-hidden="true"></span>
+                <span class="word-year"><time datetime="1998">1998</time></span>
+                <span class="word-btn-hint" aria-hidden="true"><svg class="archive-icon" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="4"/><path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg> <span>Buka Arsip</span></span>
+              </summary>
+              <article class="entry-dossier" aria-label="Ringkasan obituari renjana">
+                <header class="dossier-header">
+                  <h3>renjana <span class="phonetic">/rən.ja.na/</span></h3>
+                  <p class="pos-badge">nomina / Sanskerta / Lema Obituari Utama</p>
+                </header>
+                <p class="definition-text">
+                  Hasrat mendalam yang membakar jiwa tanpa nama; cinta dan kerinduan yang meluap melampaui batas logika rasional.
+                </p>
+                <p class="referral-note">
+                  <em>Catatan Lengkap / Telah disajikan sebagai Berita Duka Utama di halaman depan terbitan ini.</em>
+                </p>
+                <dl class="dossier-meta">
+                  <dt>Tahun Keberangkatan</dt>
+                  <dd><time datetime="1998">1998</time></dd>
+                  <dt>Penyelenggara</dt>
+                  <dd>Tergusur oleh kata serapan <em>passion</em> dan penyederhanaan ke kata <em>hasrat</em>.</dd>
+                </dl>
+                <div class="dossier-actions">
+                  <button type="button" class="btn-promote-stage" data-word-id="renjana" aria-label="Tampilkan kata renjana di mimbar utama">
+                    <span>Baca di Mimbar Utama</span>
+                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+                  </button>
+                </div>
+              </article>
+            </details>
+          </li>
+
+        <!-- L3M4 11: anala - tahun 2002 - -->
+          <li class="directory-item" data-decade="2000" id="item-anala">
+            <details class="obituary-details" name="obituari-arsip" id="entry-anala">
+              <summary class="word-trigger">
+                <span class="word-lemma">anala</span>
+                <span class="word-leader" aria-hidden="true"></span>
+                <span class="word-year"><time datetime="2002">2002</time></span>
+                <span class="word-btn-hint" aria-hidden="true"><svg class="archive-icon" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="4"/><path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg> <span>Buka Arsip</span></span>
+              </summary>
+              <article class="entry-dossier" aria-label="Obituari kata anala">
+                <header class="dossier-header">
+                  <h3>anala <span class="phonetic">/a.na.la/</span></h3>
+                  <p class="pos-badge">nomina / Sanskerta</p>
+                </header>
+                <p class="definition-text">
+                  Api batin yang menyala membakar kepasrahan; kehangatan daya hidup yang menjadi sumber keberanian dalam kesendirian.
+                </p>
+                <dl class="dossier-meta">
+                  <dt>Tahun Pertama Tercatat</dt>
+                  <dd><time datetime="1936">1936</time> (Novel sastra Balai Pustaka)</dd>
+                  <dt>Tahun Terakhir Terdengar</dt>
+                  <dd><time datetime="2002">2002</time> (Resensi Teater Sastra Koran Kompas Minggu)</dd>
+                  <dt>Sebab Kepergian</dt>
+                  <dd>Penyempitan perbendaharaan kata ke dalam lema dasar tunggal <em>api</em> dan <em>bara</em>.</dd>
+                  <dt>Kata Turunan</dt>
+                  <dd><em>menganala</em> (membara berkobar di dalam sanubari).</dd>
+                </dl>
+                <figure class="farewell-quote">
+                  <blockquote>
+                    <p>“Anala di dadanya bergolak hebat membakar keraguan yang lama menumpuk, mendesaknya melangkah menembus badai.”</p>
+                  </blockquote>
+                  <figcaption><cite>Sutan Takdir Alisjahbana</cite>, dalam <em>Layar Terkembang</em> (<time datetime="1936">1936</time>)</figcaption>
+                </figure>
+                              <div class="dossier-actions">
+                  <button type="button" class="btn-promote-stage" data-word-id="anala" aria-label="Tampilkan kata anala di mimbar utama">
+                    <span>Baca di Mimbar Utama</span>
+                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+                  </button>
+                </div>
+              </article>
+            </details>
+          </li>
+
+        <!-- L3M4 12: sawala - tahun 2005 - -->
+          <li class="directory-item" data-decade="2000" id="item-sawala">
+            <details class="obituary-details" name="obituari-arsip" id="entry-sawala">
+              <summary class="word-trigger">
+                <span class="word-lemma">sawala</span>
+                <span class="word-leader" aria-hidden="true"></span>
+                <span class="word-year"><time datetime="2005">2005</time></span>
+                <span class="word-btn-hint" aria-hidden="true"><svg class="archive-icon" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="4"/><path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg> <span>Buka Arsip</span></span>
+              </summary>
+              <article class="entry-dossier" aria-label="Obituari kata sawala">
+                <header class="dossier-header">
+                  <h3>sawala <span class="phonetic">/sa.wa.la/</span></h3>  
+                  <p class="pos-badge">nomina / Sunda / Melayu Klasik</p>
+                </header>
+                <p class="definition-text">
+                  Pertukaran pikiran atau perbantahan yang beradab dan santun; silang argumen yang bermaksud mencari kebenaran, bukan menundukkan lawan bicara.
+                </p>
+                <dl class="dossier-meta">
+                  <dt>Tahun Pertama Tercatat</dt>
+                  <dd><time datetime="1948">1948</time> (Risalah Musyawarah Kebudayaan Nusantara)</dd>
+                  <dt>Tahun Terakhir Terdengar</dt>
+                  <dd><time datetime="2005">2005</time> (Tajuk Kolom Majalah Berita Mingguan Tempo)</dd>
+                  <dt>Sebab Kepergian</dt>
+                  <dd>Tergusur oleh kata <em>debat</em>, <em>polemik</em>, dan istilah media sosial <em>cekcok online</em>.</dd>
+                  <dt>Kata Turunan</dt>
+                  <dd><em>bersawala</em> (bertukar pikiran secara bermartabat), <em>sawalaisasi</em>.</dd>
+                </dl>
+                <figure class="farewell-quote">
+                  <blockquote>
+                    <p>“Sawala ini kami gelar bukan untuk mencari siapa yang menang atau kalah, melainkan memelihara akal sehat bersama di tengah kabut zaman.”</p>
+                  </blockquote>
+                  <figcaption>Risalah Pertemuan Pujangga Baru (<time datetime="1939">1939</time>)</figcaption>
+                </figure>
+                              <div class="dossier-actions">
+                  <button type="button" class="btn-promote-stage" data-word-id="sawala" aria-label="Tampilkan kata sawala di mimbar utama">
+                    <span>Baca di Mimbar Utama</span>
+                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+                  </button>
+                </div>
+              </article>
+            </details>
+          </li>
+
+        <!-- L3M4 13: gencat - tahun 2008 - -->
+          <li class="directory-item" data-decade="2000" id="item-gencat">
+            <details class="obituary-details" name="obituari-arsip" id="entry-gencat">
+              <summary class="word-trigger">
+                <span class="word-lemma">gencat</span>
+                <span class="word-leader" aria-hidden="true"></span>
+                <span class="word-year"><time datetime="2008">2008</time></span>
+                <span class="word-btn-hint" aria-hidden="true"><svg class="archive-icon" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="4"/><path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg> <span>Buka Arsip</span></span>
+              </summary>
+              <article class="entry-dossier" aria-label="Obituari kata gencat">
+                <header class="dossier-header">
+                  <h3>gencat <span class="phonetic">/gən.tʃat/</span></h3>
+                  <p class="pos-badge">verba / adjektiva / Melayu Riau</p>
+                </header>
+                <p class="definition-text">
+                  Terhenti di tengah jalan sebelum tuntas; terputus lajunya sementara waktu karena ada peristiwa tak terduga yang menghadang.
+                </p>
+                <dl class="dossier-meta">
+                  <dt>Tahun Pertama Tercatat</dt>
+                  <dd><time datetime="1952">1952</time> (Warta Berita Radio Perjuangan)</dd>
+                  <dt>Tahun Terakhir Terdengar</dt>
+                  <dd><time datetime="2008">2008</time> (Pemberitaan Sengketa Buruh Manufaktur Surabaya)</dd>
+                  <dt>Sebab Kepergian</dt>
+                  <dd>Penciutan makna yang hanya disisakan dalam frasa militer <em>gencatan senjata</em>, sementara penggunaan kata tunggalnya punah.</dd>
+                  <dt>Kata Turunan</dt>
+                  <dd><em>tergencat</em> (terhenti langkahnya secara mendadak).</dd>
+                </dl>
+                <figure class="farewell-quote">
+                  <blockquote>
+                    <p>“Pertempuran sengit itu sempat gencat ketika senja temaram turun, menyisakan bau mesiu dan kesunyian yang menusuk hingga ke tulang.”</p>
+                  </blockquote>
+                  <figcaption>Catatan Koresponden Perang, Surat Kabar <cite>Merdeka</cite> (<time datetime="1947">1947</time>)</figcaption>
+                </figure>
+                              <div class="dossier-actions">
+                  <button type="button" class="btn-promote-stage" data-word-id="gencat" aria-label="Tampilkan kata gencat di mimbar utama">
+                    <span>Baca di Mimbar Utama</span>
+                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+                  </button>
+                </div>
+              </article>      
+            </details>
+          </li>
+
+        <!-- L3M4 14: candala - tahun 2012 - -->
+          <li class="directory-item" data-decade="2010" id="item-candala">
+            <details class="obituary-details" name="obituari-arsip" id="entry-candala">
+              <summary class="word-trigger">
+                <span class="word-lemma">candala</span>
+                <span class="word-leader" aria-hidden="true"></span>
+                <span class="word-year"><time datetime="2012">2012</time></span>
+                <span class="word-btn-hint" aria-hidden="true"><svg class="archive-icon" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="4"/><path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg> <span>Buka Arsip</span></span>
+              </summary>
+              <article class="entry-dossier" aria-label="Obituari kata candala">
+                <header class="dossier-header">
+                  <h3>candala <span class="phonetic">/tʃan.da.la/</span></h3>
+                  <p class="pos-badge">adjektiva / Sanskerta / Jawa Kuno</p>
+                </header>
+                <p class="definition-text">
+                  Rasa rendah diri yang teramat sangat hingga melumpuhkan harga diri dan keberanian bertindak di hadapan sesama manusia.
+                </p>
+                <dl class="dossier-meta">
+                  <dt>Tahun Pertama Tercatat</dt>
+                  <dd><time datetime="1930">1930</time> (Kamus Kawi-Indonesia Poerwadarminta)</dd>
+                  <dt>Tahun Terakhir Terdengar</dt>
+                  <dd><time datetime="2012">2012</time> (Kolom Esai Humaniora Jurnal Basis)</dd>
+                  <dt>Sebab Kepergian</dt>
+                  <dd>Tersingkir oleh bahasa gaul Belanda <em>minder</em> dan istilah psikologi populer media sosial <em>insecure</em>.</dd>
+                  <dt>Kata Turunan</dt>
+                  <dd><em>mencandala</em> (meremehkan diri sendiri secara berlebihan).</dd>
+                </dl>
+                <figure class="farewell-quote">
+                  <blockquote>
+                    <p>“Biar candala merayap di bawah telapak kaki, kening ini tetap tegak menatap langit lepas yang tak pernah mengumbar janji.”</p>
+                  </blockquote>
+                  <figcaption><cite>Chairil Anwar</cite>, dalam antologi <em>Deru Campur Debu</em> (<time datetime="1949">1949</time>)</figcaption>
+                </figure>
+                              <div class="dossier-actions">
+                  <button type="button" class="btn-promote-stage" data-word-id="candala" aria-label="Tampilkan kata candala di mimbar utama">
+                    <span>Baca di Mimbar Utama</span>
+                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+                  </button>
+                </div>
+              </article>
+            </details>
+          </li>
+
+        <!-- L3M4 15: mansor - tahun 2016 - -->
+          <li class="directory-item" data-decade="2010" id="item-mansor">
+            <details class="obituary-details" name="obituari-arsip" id="entry-mansor">
+              <summary class="word-trigger">
+                <span class="word-lemma">mansor</span>
+                <span class="word-leader" aria-hidden="true"></span>
+                <span class="word-year"><time datetime="2016">2016</time></span>
+                <span class="word-btn-hint" aria-hidden="true"><svg class="archive-icon" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="4"/><path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg> <span>Buka Arsip</span></span>
+              </summary>
+              <article class="entry-dossier" aria-label="Obituari kata mansor">
+                <header class="dossier-header">
+                  <h3>mansor <span class="phonetic">/man.sor/</span></h3>
+                  <p class="pos-badge">verba / adjektiva / Arab - Mansukh - / Melayu Klasik</p>
+                </header>
+                <p class="definition-text">
+                  Dinyatakan tidak lagi berlaku, dihapuskan keberlakuannya oleh hukum atau kesepakatan adat yang lebih baru.
+                </p>
+                <dl class="dossier-meta">
+                  <dt>Tahun Pertama Tercatat</dt>
+                  <dd><time datetime="1960">1960</time> (Kitab Himpunan Hukum Adat Sumatera)</dd>
+                  <dt>Tahun Terakhir Terdengar</dt>
+                  <dd><time datetime="2016">2016</time> (Sidang Musyawarah Lembaga Adat Melayu Riau)</dd>
+                  <dt>Sebab Kepergian</dt>
+                  <dd>Tergusur oleh istilah hukum modern <em>batal demi hukum</em>, <em>kedaluwarsa</em>, dan <em>dihapus</em>.</dd>
+                  <dt>Kata Turunan</dt>
+                  <dd><em>memansorkan</em> (mencabut atau membatalkan suatu piagam kesepakatan).</dd>
+                </dl>
+                <figure class="farewell-quote">
+                  <blockquote>                    
+                    <p>“Piagam itu kini telah mansor dimakan zaman, namun rasa keadilannya masih terpatri di dalam ingatan para tetua kampung.”</p>
+                  </blockquote>
+                  <figcaption>Lembaran Maklumat Adat Nusantara (<time datetime="1962">1962</time>)</figcaption>
+                </figure>
+                              <div class="dossier-actions">
+                  <button type="button" class="btn-promote-stage" data-word-id="mansor" aria-label="Tampilkan kata mansor di mimbar utama">
+                    <span>Baca di Mimbar Utama</span>
+                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+                  </button>
+                </div>
+              </article>      
+            </details>
+          </li>
+      </ol>
+    </section>
+
+    <!-- S3Ct10N C: perenungan bagi pelayat - renungan penutup kepergian bahasa - -->
+      <section class="personal-reflection" id="perenungan-pelayat" aria-labelledby="reflection-title">
+        <header>
+          <h2 id="reflection-title">
+            <svg class="section-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L3 12.5V21h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg>
+            <span>Perenungan Bagi Pelayat</span>
+          </h2>
+        </header>
+        <div class="reflection-body">
+          <p>
+            Sebuah kata tidak pernah mati di atas lembaran kertas kamus. Di sana ia diawetkan layaknya mumi dalam museum yang dingin. Sebuah kata sesungguhnya mati di udara, tepat pada detik ketika bibir manusia terakhir berhenti mengucapkannya dalam perbualan sehari-hari.
+          </p>
+          <p>
+            Ketika kita mengganti kata lama dengan serapan asing yang seragam, kita bukan sekadar mengganti bunyi; kita sedang merelakan satu cara pandang khas nenek moyang kita tentang dunia ikut terkubur. Sebelum meninggalkan lembaran memorial ini, tanyakanlah pada batin Anda sendiri.
+          </p>
+          <p class="reflection-question">
+            <em>“Kata apa yang Anda sendiri sadari telah Anda lupakan sepanjang hidup Anda?”</em>
+          </p>
+        </div>
+      </section>  
+
+    </main>
+
+        <!-- k0l0f0n d4n impresum cetak lembaran broadsheet -->
+    <footer role="contentinfo" id="kolofon-bawah" class="newspaper-colophon colophon">
+      <div class="colophon-inner">
+
+        <!-- baris maklumat penutup: kutipan takzim dan judul kolofon -->
+        <div class="colophon-lead">
+          <div class="colophon-testament">
+            <blockquote class="colophon-quote">
+              <p>“Terbitan ini tidak dijual. Ia hanya dicetak untuk mereka yang bersedia berhenti sejenak dan membaca kata-kata yang telah purna tugas.”</p>
+            </blockquote>
+          </div>
+          <div class="colophon-statement">
+            <h2 class="colophon-title">Kolofon &amp; Catatan Percetakan</h2>
+            <p class="colophon-summary">
+              Dihimpun dan diterbitkan secara mandiri dengan takzim bagi pemerhati perbendaharaan kata bahasa Indonesia. Sidang Redaksi Lembaran Memorial, Malang dan Jakarta, Oktober 2026.
+            </p>
+          </div>
+        </div>
+
+        <!-- kisi ledger tabular empat zona mikro data -->
+        <div class="colophon-ledger" role="region" aria-label="Informasi Kolofon dan Sumber Korpus">
+
+          <div class="ledger-col">
+            <span class="ledger-tag">KORPUS RUJUKAN</span>
+            <ul class="ledger-list" role="list">
+              <li>Badan Pengembangan &amp; Pembinaan Bahasa</li>
+              <li>KBBI Edisi V Daring / <a href="https://kbbi.kemdikbud.go.id" rel="noopener external" class="ledger-link">kbbi.kemdikbud.go.id <svg class="inline-ext-icon" viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a></li>
+              <li>Majalah Sastra <em>Poedjangga Baroe</em> 1933&ndash;1942</li>
+              <li>Dokumentasi Pers Balai Pustaka &amp; <em>Sin Po</em> Batavia</li>
+            </ul>
+          </div>
+
+          <div class="ledger-col">
+            <span class="ledger-tag">TIPOGRAFI ARSIP</span>
+            <ul class="ledger-list" role="list">
+              <li><strong>Fraunces</strong> &mdash; Lema Utama, Tajuk, &amp; Kutipan</li>
+              <li><strong>Roboto Flex</strong> &mdash; Teks Narasi &amp; Analisis</li>
+              <li><strong>Recursive</strong> &mdash; Mikro Ledger &amp; Skala Waktu</li>
+              <li>Glif WOFF2 Lokal Mandiri Tanpa Ketergantungan CDN</li>
+            </ul>
+          </div>
+
+          <div class="ledger-col">
+            <span class="ledger-tag">REKAYASA CETAK</span>
+            <ul class="ledger-list" role="list">
+              <li>HTML5 Semantik &amp; Variabel Desain CSS Murni</li>
+              <li>Kedaulatan Pembaca: Nihil Pelacak &amp; Bebas Kuki</li>
+              <li>Aksesibilitas Tinggi Standar WCAG 2.1 AAA</li>
+              <li>Performa Luring Mandiri Cepat Tanpa Runtime Eksternal</li>
+            </ul>
+          </div>
+
+          <div class="ledger-col">
+            <span class="ledger-tag">LEMBARAN &amp; EDISI</span>
+            <ul class="ledger-list" role="list">
+              <li>Format: Broadsheet Digital Interaktif Responsif</li>
+              <li>Kurasi: 15 Lema Obsolet Terverifikasi Korpus</li>
+              <li>Persembahan: Frontend Starter Camp FSC 2026</li>
+              <li>Akses Arsip: Terbuka untuk Edukasi Kebahasaan</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- cap meterai broadsheet raksasa di dasar lembaran -->
+        <div class="colophon-wordmark" aria-hidden="true">NEKROLOGI</div>
+
+        <!-- bilah folio bawah dan navigasi kembali ke puncak -->
+        <div class="colophon-bottom-bar">
+          <p class="copyright-notice">
+            NEKROLOGI © 2026 / Didedikasikan dengan takzim bagi perbendaharaan kata bahasa Indonesia yang telah berpulang.
+          </p>
+          <a href="#konten-utama" class="colophon-top-link" aria-label="Kembali ke bagian atas lembaran obituari">
+            <span>[ Ke Puncak Lembaran ↑ ]</span>
+          </a>
+        </div>
+
+      </div>
+    </footer>
+
+  <!-- skrip sumber kebenaran data dan interaksi progresif -->
+  <script src="js/data.js" defer></script>
+  <script src="js/render.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
