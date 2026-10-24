@@ -444,27 +444,11 @@ body.is-night-edition .nav {
 }
 
 body.is-night-edition .nav__panel {
-  background: #121210;
-  color: #EFEBE3;
-  border-top-color: #2B2A26;
-}
-
-body.is-night-edition .nav__toggle {
-  border-color: #383530;
-  color: #EFEBE3;
   background: transparent;
-}
-
-body.is-night-edition .nav__toggle:hover,
-body.is-night-edition .nav__toggle.is-open {
-  background: #EFEBE3;
-  color: #161614;
-  border-color: #EFEBE3;
 }
 
 body.is-night-edition .nav__links a {
   color: #EFEBE3;
-  border-bottom-color: rgba(239, 235, 227, 0.12);
 }
 
 body.is-night-edition .nav__links a:hover,
@@ -472,16 +456,28 @@ body.is-night-edition .nav__links a:focus-visible {
   color: var(--signal);
 }
 
-body.is-night-edition .nav__cta {
-  background: #EFEBE3;
-  color: #161614;
-  border-color: #EFEBE3;
+body.is-night-edition .nav__sep {
+  color: #EFEBE3;
+  opacity: 0.25;
 }
 
-body.is-night-edition .nav__cta:hover {
-  background: var(--signal);
-  color: #161614;
-  border-color: var(--signal);
+body.is-night-edition .nav__theme-btn {
+  color: #EFEBE3;
+}
+
+body.is-night-edition .nav__theme-btn:hover {
+  color: var(--signal);
+}
+
+body.is-night-edition .nav__burger {
+  color: #EFEBE3;
+}
+
+@media (max-width: 767.98px) {
+  body.is-night-edition .nav__panel {
+    background: #161614;
+    border-bottom-color: #2B2A26;
+  }
 }
 
 /* penyesuaian mistar pica lema di edisi malam */

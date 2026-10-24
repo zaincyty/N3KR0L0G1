@@ -6,7 +6,7 @@ STATUS: FINAL — TERIMPLEMENTASI & TERVERIFIKASI (v1.0)
 | :--- | :--- |
 | Versi Dokumen | v1.0 (Produksi / Terimplementasi) |
 | Disusun oleh | Tim Pengembang & Kurator |
-| Untuk | Publik |
+| Untuk | Final Submission Festival Sains & Creator (FSC) 2026 / Publik |
 | Tanggal | 24 Oktober 2026 |
 | Dokumen Terkait | Notulen Rapat Pengembang, Repositori Sumber Kode |
 

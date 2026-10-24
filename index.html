@@ -52,15 +52,24 @@ N3KR0L0G1 - index.html
     <div class="nav__panel" id="nav-panel">
       <nav class="nav__links" aria-label="Navigasi Lembaran Obituari">
         <a href="#obituari-utama">Obituari</a>
+        <span class="nav__sep" aria-hidden="true">/</span>
         <a href="#indeks-kata">Katalog Lema</a>
+        <span class="nav__sep" aria-hidden="true">/</span>
         <a href="#perenungan-pelayat">Perenungan</a>
+        <span class="nav__sep" aria-hidden="true">/</span>
         <a href="#kolofon-bawah">Kolofon</a>
       </nav>
     </div>
 
     <div class="nav__actions">
-      <button class="btn btn--solid nav__cta edition-switch" type="button" id="edition-toggle" aria-pressed="false" aria-label="Beralih ke Edisi Malam untuk kenyamanan membaca di ruang gelap">Edisi Malam</button>
-      <button class="nav__toggle mono" type="button" aria-expanded="false" aria-controls="nav-panel" data-label-open="Menu" data-label-close="Tutup">Menu</button>
+      <button class="nav__theme-btn mono" type="button" id="edition-toggle" aria-pressed="false" aria-label="Ganti edisi baca">
+        <span class="theme-glyph" aria-hidden="true">◐</span>
+        <span class="theme-label">edisi malam</span>
+      </button>
+      <button class="nav__burger" type="button" id="nav-burger-btn" aria-expanded="false" aria-controls="nav-panel" aria-label="Buka navigasi menu">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
     </div>
   </header>
 

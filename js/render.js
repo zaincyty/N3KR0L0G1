@@ -763,27 +763,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /* kendali buka tutup bilah navigasi adaptif untuk layar gawai */
 function initNavToggle() {
-  const toggle = document.querySelector(".nav__toggle");
+  const toggle = document.getElementById("nav-burger-btn") || document.querySelector(".nav__toggle");
   const panel = document.getElementById("nav-panel");
   const links = document.querySelectorAll(".nav__links a");
   if (!toggle || !panel) return;
 
   function closeMenu() {
     panel.classList.remove("is-open");
-    toggle.classList.remove("is-open");
+    toggle.classList.remove("is-active");
     toggle.setAttribute("aria-expanded", "false");
-    document.documentElement.classList.remove("menu-open");
-    const labelOpen = toggle.getAttribute("data-label-open") || "Menu";
-    toggle.textContent = labelOpen;
   }
 
   function openMenu() {
     panel.classList.add("is-open");
-    toggle.classList.add("is-open");
+    toggle.classList.add("is-active");
     toggle.setAttribute("aria-expanded", "true");
-    document.documentElement.classList.add("menu-open");
-    const labelClose = toggle.getAttribute("data-label-close") || "Tutup";
-    toggle.textContent = labelClose;
   }
 
   toggle.addEventListener("click", function () {

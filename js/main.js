@@ -66,12 +66,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  /* 4. sakelar edisi malam */
+  /* 4. sakelar edisi malam minimalis */
   function applyTheme(isNight) {
     document.body.classList.toggle("is-night-edition", isNight);
     if (editionToggle) {
       editionToggle.setAttribute("aria-pressed", isNight ? "true" : "false");
-      editionToggle.textContent = isNight ? "Edisi Pagi" : "Edisi Malam";
+      const glyph = editionToggle.querySelector(".theme-glyph");
+      const label = editionToggle.querySelector(".theme-label");
+      if (glyph) glyph.textContent = isNight ? "○" : "◐";
+      if (label) label.textContent = isNight ? "edisi pagi" : "edisi malam";
     }
   }
   if (editionToggle) {
