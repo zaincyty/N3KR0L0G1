@@ -33,7 +33,7 @@ N3KR0L0G1 - index.html
 
   <!-- 1. B1L4H N4V1G4S1 K0R4N BR04DSH33T - bilah navigasi atas - -->
   <header class="nav" id="top">
-    <a class="nav__logo" href="#top" aria-label="Nekrologi, kembali ke puncak">
+    <a class="nav__logo" href="index.html" aria-label="Nekrologi, muat ulang halaman">
       <svg class="logo" viewBox="0 0 226 105" aria-hidden="true" focusable="false">
         <defs>
           <clipPath id="logo-n">
@@ -287,7 +287,7 @@ N3KR0L0G1 - index.html
         </p>
       </div>
 
-      <p class="cards__hint mono" id="cards-hint">Pilih lembar lema untuk menelaah anatomi kehilangan kata.</p>
+
       <ul class="cards" role="list">
         <li class="card is-selected" data-font="morrow">
           <div class="card__top mono"><span class="card__year">1998</span></div>
@@ -1030,25 +1030,38 @@ N3KR0L0G1 - index.html
     <footer role="contentinfo" id="kolofon-bawah" class="footer section--ink">
       <div class="grid footer__top">
         <div class="footer__news">
-          <h2 class="footer__heading">Letters about letters</h2>
-          <p class="footer__body">New releases, specimen drops and the odd kerning rant. Four emails a year, tops.</p>
+          <h2 class="footer__heading">Warta Kata<br>Berpulang</h2>
+          <p class="footer__body">Lema usang, riset etimologi, dan catatan korpus sastra. Empat warta setahun, tanpa kuki pelacak.</p>
         </div>
-        <form class="nl" method="dialog" novalidate="" data-msg-success="Terima kasih! Warkah memorial telah dicatat." data-msg-error="Alamat surel tidak valid. Periksa dan coba lagi." onsubmit="event.preventDefault(); this.querySelector('.nl__msg').textContent = this.dataset.msgSuccess; this.querySelector('.nl__input').value = '';">
-          <label class="sr-only" for="nl-email">Email address for the newsletter</label>
+        <form class="nl" action="#" onsubmit="event.preventDefault(); var msg = document.getElementById('nl-message'); if (msg) { msg.textContent = 'Terima kasih. Alamat Anda telah dicatat dalam buku tamu memorial.'; }" novalidate>
+          <label class="sr-only" for="nl-email">Alamat surel untuk buletin warta</label>
           <div class="nl__row">
-            <input class="nl__input" id="nl-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@example.com" data-qa="nl-email" aria-describedby="nl-message">
-            <button class="btn btn--solid nl__btn" type="submit" data-qa="nl-submit">Subscribe</button>
+            <input class="nl__input" id="nl-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@example.com" aria-describedby="nl-message">
+            <button class="btn btn--solid nl__btn" type="submit">Langganan</button>
           </div>
-          <p class="nl__msg mono" id="nl-message" data-qa="nl-message" aria-live="polite"></p>
+          <p class="nl__msg mono" id="nl-message" aria-live="polite"></p>
         </form>
       </div>
 
       <div class="grid footer__credits mono">
-        <p class="credits__copy">NEKROLOGI © 2026 / Memorial Kata Bahasa Indonesia</p>
-        <p class="credits__by"><a href="#konten-utama">Designed &amp; built for FSC 2026 ↑</a></p>
+        <p class="credits__copy">NEKROLOGI &copy; 2026 &mdash; Ikhtiar takzim merawat perbendaharaan kata bahasa Indonesia yang telah berpulang.</p>
+        <p class="credits__by"><a href="#konten-utama">[ Ke Puncak Lembaran &uarr; ]</a></p>
       </div>
 
-      <p class="footer__ks" aria-hidden="true"><span>N</span><span>K</span></p>
+      <div class="footer__ks" aria-hidden="true">
+        <svg class="footer__logo" viewBox="0 0 226 105" focusable="false">
+          <defs>
+            <clipPath id="footer-logo-n">
+              <path d="M0 2.5L0 102.5L38 102.5L38 46L88 102.5L126 102.5L126 2.5L88 2.5L88 59L38 2.5Z"></path>
+            </clipPath>
+          </defs>
+          <path class="footer__logo-glyph" d="M0 2.5L0 102.5L38 102.5L38 46L88 102.5L126 102.5L126 2.5L88 2.5L88 59L38 2.5Z"></path>
+          <path class="footer__logo-glyph" d="M86 2.5L86 102.5L127.2 102.5L127.2 71.9L219.2 2.5L167.5 2.5L127.2 33L127.2 2.5L86 2.5ZM123.4 56.3L170 102.5L223.6 102.5L153.3 33.8L123.4 56.3Z"></path>
+          <g clip-path="url(#footer-logo-n)">
+            <path class="footer__logo-signal" d="M86 2.5L86 102.5L127.2 102.5L127.2 71.9L219.2 2.5L167.5 2.5L127.2 33L127.2 2.5L86 2.5ZM123.4 56.3L170 102.5L223.6 102.5L153.3 33.8L123.4 56.3Z"></path>
+          </g>
+        </svg>
+      </div>
     </footer>
 
   <!-- script js -->
