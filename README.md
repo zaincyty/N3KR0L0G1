@@ -14,7 +14,7 @@
 
 ### ✦ sekilas proyek
 
-nekrologi dibangun untuk ajang frontend starter camp — fsc 2026 — bcc filkom universitas brawijaya. alih-alih membuat antarmuka saas klise yang seragam, proyek ini memilih jalur estetika koran fisik tempo dulu dengan pendekatan tactile swiss grid, sudut tajam 0px, dan penghormatan penuh terhadap standar baku web platform.
+nekrologi dibangun untuk kebutuhan pribadi. alih-alih membuat antarmuka saas klise yang seragam, proyek ini memilih jalur estetika koran fisik tempo dulu dengan pendekatan tactile swiss grid, sudut tajam 0px, dan penghormatan penuh terhadap standar baku web platform.
 
 ---
 
