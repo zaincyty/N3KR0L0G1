@@ -1,0 +1,690 @@
+/*
+=== === === === ===
+c0mp0n3nts.css - gaya visual komponen koran broadsheet nekrologi -
+=== === === === ===
+*/
+
+/* ==============================================================================
+   1. T4UT4N L0MP4T AKS3S1B1L1T4S - skip link pembaca layar dan navigasi keyboard -
+   ============================================================================== */
+
+/* disembunyikan secara visual tetapi muncul ketika ditekan tab */
+.skip-link {
+  position: absolute;
+  top: -9999px;
+  left: 16px;
+  background-color: var(--color-text-primary);
+  color: var(--color-surface);
+  padding: var(--space-sm) var(--space-md);
+  font-family: var(--font-serif);
+  font-size: var(--text-caption);
+  text-decoration: none;
+  z-index: 9999;
+  border: 1px solid var(--color-surface);
+}
+
+.skip-link:focus {
+  top: 16px;
+}
+
+
+/* ==============================================================================
+   2. T0MB0L D4N S4K3L4R M4STH34D - tombol mode hening dan aksi atas -
+   ============================================================================== */
+
+/* tombol ganti edisi malam */
+.edition-switch,
+.ritual-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  min-height: 44px;
+  background-color: transparent;
+  color: var(--color-text-primary);
+  border: var(--border-hairline);
+  padding: 6px 12px;
+  font-family: var(--font-sans);
+  font-size: var(--text-caption);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color var(--motion-duration-fast) var(--motion-ease-subtle),
+              color var(--motion-duration-fast) var(--motion-ease-subtle);
+}
+
+.edition-switch:hover,
+.ritual-switch:hover {
+  background-color: var(--color-surface-elevated);
+  border-color: var(--color-text-primary);
+}
+
+.edition-switch[aria-pressed="true"],
+.ritual-switch[aria-pressed="true"] {
+  background-color: var(--color-text-primary);
+  color: var(--color-surface);
+}
+
+.edition-switch svg,
+.ritual-switch svg {
+  flex-shrink: 0;
+}
+
+
+/* ==============================================================================
+   3. HURUF K4P1T4L P3MBUL4 - drop cap 4 baris naskah editorial -
+   ============================================================================== */
+
+/* drop cap awal paragraf */
+.drop-cap {
+  float: left;
+  font-family: var(--font-serif);
+  font-size: 4.5rem;
+  line-height: 0.75;
+  font-weight: 700;
+  padding-top: 6px;
+  padding-right: var(--space-sm);
+  padding-bottom: 2px;
+  color: var(--color-accent);
+}
+
+
+/* ==============================================================================
+   4. T0MB0L S4R1NG D3K4D3 - filter chips pemilah dekade tahun -
+   ============================================================================== */
+
+.filter-chip {
+  min-height: 38px;
+  background-color: transparent;
+  color: var(--color-text-secondary);
+  border: none;
+  border-bottom: 2.5px solid transparent;
+  margin: 0 4px;
+  padding: 6px 10px;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.18s cubic-bezier(0.2, 0.7, 0.1, 1),
+              border-color 0.18s cubic-bezier(0.2, 0.7, 0.1, 1);
+}
+
+.filter-chip:hover {
+  background-color: transparent;
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
+}
+
+.filter-chip.active,
+.filter-chip[aria-pressed="true"] {
+  background-color: transparent;
+  color: var(--color-text-primary);
+  border-bottom-color: var(--color-accent);
+  font-weight: 700;
+}
+
+
+/* ==============================================================================
+   5. T0MB0L N3KR0L0G1 AC4K - tombol penjelajah obituari acak -
+   ============================================================================== */
+
+.random-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  min-height: 36px;
+  background-color: transparent;
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border);
+  padding: 6px 14px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.18s cubic-bezier(0.2, 0.7, 0.1, 1),
+              color 0.18s cubic-bezier(0.2, 0.7, 0.1, 1),
+              border-color 0.18s cubic-bezier(0.2, 0.7, 0.1, 1);
+}
+
+.random-btn:hover {
+  background-color: var(--color-text-primary);
+  color: var(--primitive-paper);
+  border-color: var(--color-text-primary);
+}
+
+.random-btn svg {
+  flex-shrink: 0;
+}
+
+
+/* ==============================================================================
+   6. G4R1S T1T1K P3M1MP1N D4N D1R3KT0R1 - fluid dot leaders lema koran -
+   ============================================================================== */
+
+/* pemicu ringkasan akordeon lema */
+.word-trigger {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 48px;
+  padding-block: var(--space-md);
+  padding-inline: var(--space-sm);
+  cursor: pointer;
+  list-style: none;
+  transition: background-color var(--motion-duration-fast) var(--motion-ease-subtle);
+}
+
+/* hilangkan segitiga bawaan peramban */
+.word-trigger::-webkit-details-marker {
+  display: none;
+}
+
+.word-trigger:hover {
+  background-color: var(--color-surface-elevated);
+}
+
+/* nama kata di katalog */
+.word-lemma {
+  font-family: var(--font-serif);
+  font-size: var(--text-h3);
+  font-weight: 500;
+  font-variation-settings: "wght" 500, "opsz" 24;
+  color: var(--color-text-primary);
+  letter-spacing: -0.01em;
+  transition: font-variation-settings var(--motion-duration-base) var(--motion-ease-subtle),
+              letter-spacing var(--motion-duration-fast) var(--motion-ease-subtle),
+              color var(--motion-duration-fast) var(--motion-ease-subtle);
+}
+
+.word-trigger:hover .word-lemma {
+  letter-spacing: 0.02em;
+  color: var(--color-accent);
+  font-variation-settings: "wght" 700, "opsz" 32;
+}
+
+/* garis titik pembatas */
+.word-leader {
+  flex-grow: 1;
+  border-bottom: 1px dotted var(--color-text-tertiary);
+  margin-inline: var(--space-md);
+  height: 1px;
+  align-self: center;
+}
+
+/* tahun kata */
+.word-year {
+  font-family: var(--font-serif);
+  font-size: var(--text-body);
+  color: var(--color-text-secondary);
+  margin-right: var(--space-md);
+}
+
+/* tombol buka arsip */
+.word-btn-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-family: var(--font-sans);
+  font-size: var(--text-caption);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-accent);
+  padding: 4px 8px;
+  border: 1px solid transparent;
+  transition: border-color var(--motion-duration-fast) var(--motion-ease-subtle),
+              background-color var(--motion-duration-fast) var(--motion-ease-subtle);
+}
+
+.word-trigger:hover .word-btn-hint {
+  border-color: var(--color-accent);
+  background-color: var(--color-surface);
+}
+
+.word-btn-hint svg {
+  flex-shrink: 0;
+  transition: transform var(--transition-fast);
+}
+
+.obituary-details[open] .word-btn-hint svg {
+  transform: rotate(180deg);
+}
+
+/* ==============================================================================
+   7. B3RK4S 4RS1P L3M4 - kartu rincian obituari saat terbuka -
+   ============================================================================== */
+
+/* wadah details ketika terbuka */
+.obituary-details[open] {
+  background-color: var(--color-surface-elevated);
+  transition: background-color var(--motion-duration-base) var(--motion-ease-subtle);
+}
+
+.obituary-details[open] .word-trigger {
+  background-color: var(--color-surface-muted);
+  border-bottom: var(--border-hairline);
+}
+
+/* isi naskah arsip lema di dalam details */
+.entry-dossier {
+  padding: var(--space-lg);
+  border-left: var(--border-accent);
+  background-color: var(--color-surface-elevated);
+}
+
+.dossier-header {
+  margin-bottom: var(--space-md);
+}
+
+.dossier-header h3 {
+  font-family: var(--font-serif);
+  font-size: var(--text-h2);
+  margin: 0 0 var(--space-xs) 0;
+  color: var(--color-text-primary);
+}
+
+.phonetic {
+  font-family: var(--font-serif);
+  font-size: var(--text-body);
+  font-weight: 400;
+  color: var(--color-text-secondary);
+}
+
+.pos-badge {
+  font-family: var(--font-sans);
+  font-size: var(--text-caption);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-accent);
+  margin: 0;
+}
+
+/* naskah arti lema */
+.definition-text {
+  font-family: var(--font-serif);
+  font-size: var(--text-subheading);
+  line-height: var(--line-height-body);
+  color: var(--color-text-primary);
+  margin-top: 0;
+  margin-bottom: var(--space-md);
+  font-style: italic;
+}
+
+/* metadata daftar istilah lema */
+.dossier-meta {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: var(--space-xs) var(--space-md);
+  margin: 0 0 var(--space-md) 0;
+}
+
+.dossier-meta dt {
+  font-family: var(--font-sans);
+  font-size: var(--text-caption);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-secondary);
+  padding-block: var(--space-xs);
+}
+
+.dossier-meta dd {
+  font-family: var(--font-serif);
+  font-size: var(--text-body);
+  margin: 0;
+  padding-block: var(--space-xs);
+}
+
+/* kutipan di dalam kartu lema */
+.entry-dossier .farewell-quote {
+  margin: var(--space-md) 0 0 0;
+  padding: var(--space-md);
+  background-color: var(--color-surface-muted);
+  border-left: var(--border-thick);
+}
+
+.entry-dossier .farewell-quote blockquote {
+  margin: 0;
+}
+
+.entry-dossier .farewell-quote p {
+  font-family: var(--font-serif);
+  font-size: var(--text-body);
+  font-style: italic;
+  line-height: var(--line-height-body);
+  margin: 0;
+  color: var(--color-text-primary);
+}
+
+.entry-dossier .farewell-quote figcaption {
+  font-family: var(--font-serif);
+  font-size: var(--text-caption);
+  color: var(--color-text-secondary);
+  margin-top: var(--space-xs);
+  text-align: right;
+}
+
+/* tombol tampilkan ke lema utama */
+.dossier-actions {
+  margin-top: var(--space-md);
+  padding-top: var(--space-sm);
+}
+
+.btn-promote-stage {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  background-color: transparent;
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  padding: 6px 12px;
+  font-family: var(--font-sans);
+  font-size: var(--text-caption);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  min-height: 36px;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.btn-promote-stage:hover {
+  background-color: var(--color-accent);
+  color: var(--color-on-primary);
+}
+
+/* penanda baris lema yang sedang aktif di mimbar utama */
+.directory-item.is-stage-active {
+  border-left: 3px solid var(--color-accent);
+  background-color: var(--color-surface-elevated);
+}
+
+
+/* ==============================================================================
+   8. EDISI MALAM - mode naskah arsip mikrofilm koran di ruang gelap -
+   ============================================================================== */
+
+/* variabel penataan edisi malam */
+body.is-night-edition {
+  --primitive-paper: #161614;
+  --primitive-paper-warm: #1E1D1A;
+  --primitive-paper-dark: #2B2A26;
+  --primitive-ink-charcoal: #EFEBE3;
+  --primitive-ink-muted: #A39E93;
+  --primitive-ink-faint: #5C5850;
+
+  --paper: #161614;
+  --ink: #EFEBE3;
+  --fg: #EFEBE3;
+  --bg: #161614;
+  --color-bg: #161614;
+  --color-surface: #161614;
+  --color-surface-elevated: #1E1D1A;
+  --color-surface-contrast: #2B2A26;
+  --color-surface-muted: #242320;
+  --color-text-primary: #EFEBE3;
+  --color-text-secondary: #A39E93;
+  --color-text-tertiary: #6E6A62;
+  --color-border: #383530;
+  --color-border-subtle: #2B2A26;
+
+  background-color: #161614;
+  color: #EFEBE3;
+  transition: background-color var(--motion-duration-slow) var(--motion-ease-subtle),
+              color var(--motion-duration-slow) var(--motion-ease-subtle);
+}
+
+/* penyesuaian kontras bilah navigasi dan elemen struktural */
+body.is-night-edition .nav {
+  background: #161614;
+  border-bottom-color: #2B2A26;
+}
+
+body.is-night-edition .nav__panel {
+  background: transparent;
+}
+
+body.is-night-edition .nav__links a {
+  color: #EFEBE3;
+}
+
+body.is-night-edition .nav__links a:hover,
+body.is-night-edition .nav__links a:focus-visible {
+  color: var(--signal);
+}
+
+body.is-night-edition .nav__sep {
+  color: #EFEBE3;
+  opacity: 0.25;
+}
+
+body.is-night-edition .nav__theme-btn {
+  color: #EFEBE3;
+}
+
+body.is-night-edition .nav__theme-btn:hover {
+  color: var(--signal);
+}
+
+body.is-night-edition .nav__burger {
+  color: #EFEBE3;
+}
+
+@media (max-width: 767.98px) {
+  body.is-night-edition .nav__panel {
+    background: #161614;
+    border-bottom-color: #2B2A26;
+  }
+}
+
+/* penyesuaian mistar pica lema di edisi malam */
+body.is-night-edition .stage-ruler__track {
+  border-bottom-color: #383530;
+}
+
+body.is-night-edition .stage-ruler__tick {
+  background-color: #5C5850;
+}
+
+body.is-night-edition .stage-ruler__cell.is-passed .stage-ruler__tick {
+  background-color: #A39E93;
+}
+
+body.is-night-edition .stage-ruler__cell.is-active .stage-ruler__tick {
+  background-color: var(--signal);
+}
+
+body.is-night-edition .stage-ruler__num {
+  color: #6E6A62;
+}
+
+body.is-night-edition .stage-ruler__cell.is-passed .stage-ruler__num {
+  color: #A39E93;
+}
+
+body.is-night-edition .stage-ruler__cell.is-active .stage-ruler__num {
+  color: var(--signal);
+}
+
+body.is-night-edition .hero__meta,
+body.is-night-edition .hero__ruler {
+  border-color: #2B2A26;
+}
+
+body.is-night-edition .hero__ruler::before {
+  border-top-color: #2B2A26;
+}
+
+body.is-night-edition .hero__ruler span {
+  border-color: #2B2A26;
+  background-color: transparent;
+}
+
+body.is-night-edition .hero__ruler span::after {
+  border-left-color: #2B2A26;
+}
+
+body.is-night-edition .opinion-channel {
+  color: var(--color-accent);
+}
+
+body.is-night-edition .card {
+  --fg: #EFEBE3;
+  --bg: #1E1D1A;
+  background-color: #1E1D1A;
+  color: #D6D1C7;
+  border-color: #2B2A26;
+}
+
+body.is-night-edition .card:hover:not(.is-selected) {
+  background-color: #23221E;
+  border-color: #383530;
+}
+
+body.is-night-edition .card__name,
+body.is-night-edition .card__btn {
+  color: #EFEBE3;
+}
+
+body.is-night-edition .card__desc {
+  color: #A39E93;
+}
+
+body.is-night-edition .card.is-selected {
+  --fg: #161614;
+  --bg: #FFFFFF;
+  background: #FFFFFF !important;
+  background-color: #FFFFFF !important;
+  color: #161614 !important;
+  border-color: #FFFFFF !important;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.45);
+}
+
+body.is-night-edition .card.is-selected .card__top {
+  color: #161614 !important;
+}
+
+body.is-night-edition .card.is-selected .card__specimen {
+  color: var(--signal) !important;
+}
+
+body.is-night-edition .card.is-selected .card__name,
+body.is-night-edition .card.is-selected .card__btn {
+  color: #161614 !important;
+}
+
+body.is-night-edition .card.is-selected .card__desc {
+  color: #2B2A26 !important;
+}
+
+body.is-night-edition .card.is-selected .card__axes {
+  border-top-color: #161614 !important;
+}
+
+body.is-night-edition .card.is-selected .card__axes li {
+  border-color: #161614 !important;
+  color: #161614 !important;
+}
+
+body.is-night-edition .card.is-selected .card__axes li.is-active {
+  background: var(--signal) !important;
+  border-color: var(--signal) !important;
+  color: #FFFFFF !important;
+}
+
+body.is-night-edition .directory-item {
+  border-bottom-color: #2B2A26;
+}
+
+body.is-night-edition .directory-item:hover {
+  background-color: #1E1D1A;
+}
+
+body.is-night-edition .paper-grain-overlay {
+  opacity: 0.07;
+  mix-blend-mode: screen;
+}
+
+body.is-night-edition .editorial-head-strip,
+body.is-night-edition .lead-header,
+body.is-night-edition .cards-header-strip {
+  border-color: #383530;
+}
+
+/* ==============================================================================
+   8. M1KR0-1NT3R4KS1 D4N F1S1K4 T0MB0L - respon sentuhan pegas kenyal -
+   ============================================================================== */
+
+/* efek tekanan fisik nyata saat tombol ditekan */
+.stage-nav-btn:active,
+.filter-chip:active,
+.random-btn:active,
+.btn-promote-stage:active,
+.edition-switch:active,
+.ritual-switch:active {
+  transform: scale(0.97);
+  transition: transform 100ms var(--ease-spring);
+}
+
+/* animasi hover panah */
+.random-btn:hover svg,
+.btn-promote-stage:hover svg {
+  transform: translateX(3px);
+  transition: transform var(--transition-fast);
+}
+
+#stage-prev-btn:hover svg {
+  transform: translateX(-3px);
+  transition: transform var(--transition-fast);
+}
+
+#stage-next-btn:hover svg {
+  transform: translateX(3px);
+  transition: transform var(--transition-fast);
+}
+
+
+/* ==============================================================================
+   9. R3SP0NS1V3 D4N P3NGUR4NG G3R4K4N - ramah layar kecil dan kenyamanan mata -
+   ============================================================================== */
+
+@media (max-width: 640px) {
+  .word-trigger {
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+    padding-block: var(--space-sm);
+  }
+
+  .word-leader {
+    display: none;
+  }
+
+  .dossier-meta {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
+  .dossier-meta dt {
+    border-bottom: none;
+    color: var(--color-accent);
+  }
+
+  .dossier-meta dd {
+    margin-bottom: var(--space-xs);
+  }
+}
+
+/* matikan efek gerak untuk pengguna yang sensitif terhadap animasi */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
