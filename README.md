@@ -20,7 +20,7 @@ nekrologi dibangun untuk kebutuhan pribadi. alih-alih membuat antarmuka website 
 
 ### ✦ arsitektur & struktur berkas
 
-semua kode ditulis murni tanpa bundler, tanpa npm, dan tanpa framework luar — cukup buka peramban dan naskah langsung tersaji utuh.
+semua kode ditulis murni tanpa bundler, tanpa npm, dan tanpa framework luar,, cukup buka pake peramban dan naskah langsung tersaji utuh.
 
 ```text
 nekrologi/
