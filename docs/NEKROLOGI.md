@@ -1,248 +1,248 @@
-=====================================================================  
-**DOKUMEN KEBUTUHAN PRODUK (PRD) — N3KR0L0G1**  
-=====================================================================
+PRODUCT REQUIREMENTS DOCUMENT (PRD)
+N3KR0L0G1
+STATUS: FINAL — TERIMPLEMENTASI & TERVERIFIKASI (v1.0)
 
-# **PRODUCT REQUIREMENTS DOCUMENT (PRD)**
-
-> **NOTE** Implementation uses only plain HTML, CSS, and vanilla JavaScript – no frameworks, libraries, or external CDNs.
-
-## *N3KR0L0G1 — Lembaran Memorial Kata yang Telah Berpulang*
-
-**STATUS: TERIMPLEMENTASI & TERVERIFIKASI (v1.0 Final FSC)**
-
-| Komponen | Detail |
-| :---- | :---- |
-| **Nama Produk** | N3KR0L0G1 |
-| **Versi Dokumen** | v1.0 (Produksi / Terimplementasi) |
-| **Arsitektur** | Broadsheet Newspaper Web (HTML5 Semantik, Tiga Serangkai CSS, Vanilla JS) |
-| **Disusun oleh** | Tim Pengembang & Kurator |
-| **Untuk** | Final Submission Festival Sains & Creator (FSC) 2026 / Publik |
-| **Tanggal Pembaruan** | 24 Oktober 2026 |
-| **Dokumen Terkait** | Notulen Rapat, Panduan Teknis & Repositori Sumber |
+| Nama Produk | N3KR0L0G1 — Arsip Leksikografi Digital Broadsheet |
+| :--- | :--- |
+| Versi Dokumen | v1.0 (Produksi / Terimplementasi) |
+| Disusun oleh | Tim Pengembang & Kurator |
+| Untuk | Final Submission Festival Sains & Creator (FSC) 2026 / Publik |
+| Tanggal | 24 Oktober 2026 |
+| Dokumen Terkait | Notulen Rapat Pengembang, Repositori Sumber Kode |
 
 ---
 
-# 1. Ringkasan Produk (Overview)
+## 1. Ringkasan Produk (Overview)
 
-N3KR0L0G1 adalah sebuah arsip digital memorial interaktif yang dirancang dalam format surat kabar cetak format lebar (*broadsheet newspaper*), khusus mengenang kata-kata bahasa Indonesia yang telah berhenti digunakan dalam percakapan sehari-hari maupun ruang publik. 
+Bahasa Indonesia kehilangan puluhan kosakata arkais setiap dekade — bukan karena dilupakan sepenuhnya, melainkan karena tak pernah ada ruang peringatan yang layak. Kata-kata seperti *tetiron*, *renjana*, atau *djelata* menghilang senyap tanpa seremoni perpisahan, tenggelam di bawah serapan asing dan penyederhanaan gaya bicara modern. Hingga saat ini belum ada arsip digital yang mendokumentasikan kepergian kata-kata tersebut secara terhormat, faktual, dan bermuatan editorial.
 
-Bukan kamus konvensional. Bukan basis data leksikal dingin. Bukan pula aplikasi gamifikasi bahasa. N3KR0L0G1 hadir sebagai ruang kontemplasi dan penghormatan editorial, mencatat kapan sebuah lema lahir, kapan terakhir kali terlihat di ruang publik, alasan kepergiannya, kata turunan yang ditinggalkan, serta kutipan perpisahan dari naskah sastra atau pidato bersejarah.
-
-Dalam perkembangannya, proyek ini menggabungkan integritas leksikografis dengan eksplorasi tipografi kinetik variabel berstandar tinggi (mengadopsi estetika koran fisik modern editorial ala *The Jakarta Post*, *ShockingMike*, dan *Kern Society*). N3KR0L0G1 menyajikan dua mode perenungan: **Edisi Pagi** (kertas cetak koran alami) dan **Edisi Malam** (lembaran khidmat kontras tinggi), berjalan 100% tanpa dependensi eksternal, tanpa pelacak, dan ramah aksesibilitas web (WCAG 2.2 AA).
+N3KR0L0G1 hadir sebagai arsip digital memorial interaktif berbentuk surat kabar cetak format lebar (*broadsheet newspaper*). Sistem ini dibangun sepenuhnya dari HTML5 semantik, CSS terstruktur tiga berkas, dan Vanilla JavaScript murni — tanpa framework, tanpa CDN eksternal, tanpa backend runtime. Platform ini menyajikan 15 obituari lema beserta metadata historis lengkap, dua mode perenungan (Edisi Pagi dan Edisi Malam), tipografi kinetik variabel multi-axis interaktif, dan katalog yang dapat disaring berdasarkan dekade kepunahan kata.
 
 ---
 
-# 2. Tujuan & Sasaran (Goals)
+## 2. Tujuan & Sasaran (Goals)
 
-## 2.1 Tujuan Utama (Primary Goal)
-**Menciptakan ruang memorial digital bertaraf editorial broadsheet yang mendokumentasikan kepergian kata-kata Indonesia secara terhormat, faktual, dan puitis-terukur, menyadarkan publik bahwa bahasa terus mengalami kepunahan senyap tanpa seremoni perpisahan.**
-
-## 2.2 Sasaran Spesifik (Specific Goals)
-
-### Sasaran 1 — Membangun Kesadaran Skala Kehilangan Bahasa
-- **Target:** Pengunjung menyadari bahwa hilangnya kosakata bukan anomali kebetulan, melainkan proses pergantian generasi dan dominasi serapan asing.
-- **Implementasi Produk:** Pita berita telegraf (*Warta Telegraf Pusat*) menyajikan data faktual: 11 bahasa daerah punah, puluhan kritis, serta laju 5–10% kosakata arkais KBBI yang tergeser oleh serapan populer.
-
-### Sasaran 2 — Transformasi Pembaca Menjadi Pelayat
-- **Target:** Membangun ikatan emosional dan rasa takzim pengunjung terhadap kata-kata yang diarsipkan.
-- **Implementasi Produk:** Format obituari personal (nama lema, tahun pertama tercatat, tahun terakhir terlihat, penyebab kematian, dan kutipan perpisahan).
-
-### Sasaran 3 — Tipografi Kinetik Adaptif & Living Memorial
-- **Target:** Kata-kata terasa "hampir hidup" melalui variabel font multi-axis tanpa merusak keterbacaan naskah.
-- **Implementasi Produk:** Judul kinetik raksasa `N3KR0L0G1` dengan penggaris interaktif 12-segmen, kartu spesimen variabel interaktif, serta transisi gerak masuk yang halus (*smooth entrance*).
-
-### Sasaran 4 — Standar Anti-AI & Integritas Dokumen Fisik
-- **Target:** Menolak visual SaaS generik (bento card melayang, gradasi ungu, glassmorphism, sudut membulat berlebihan).
-- **Implementasi Produk:** Sudut tajam 0px, garis cetak hairline 1px solid, teks multi-kolom koran, drop cap klasik, dan kurasi teks manusiawi bebas klise AI (*anti-AI slop*).
-
-## 2.3 Non-Goals (Hal yang Ditolak Secara Sengaja)
-- **Bukan Kamus Umum / Penerjemah:** Tidak menyediakan definisi kaku kamus atau translasi multi-bahasa instan.
-- **Tanpa Fitur Sosial / Viralitas:** Tidak ada tombol bagikan media sosial, penghitung jumlah pengunjung, komentar debat, atau like.
-- **Tanpa Gamifikasi / Kuis:** Kehilangan bahasa tidak diperlakukan sebagai bahan permainan tebak kata.
-- **Tanpa Backend / Database Runtime:** Bebas server runtime, bebas pelacakan pengguna, dan bebas cookie/iklan pihak ketiga.
+- Mendokumentasikan kepergian kata-kata bahasa Indonesia secara terhormat, faktual, dan puitis-terukur dalam format arsip editorial yang tahan waktu.
+- Menyadarkan publik bahwa kepunahan kosakata adalah proses nyata dan berlangsung senyap — bukan anomali, melainkan konsekuensi pergantian generasi dan dominasi serapan asing.
+- Mendemonstrasikan kemampuan tipografi kinetik variabel font multi-axis sebagai medium memorial yang hidup dan responsif terhadap interaksi pengguna.
+- Menolak standar visual SaaS generik (bento card, glassmorphism, gradasi ungu, sudut membulat) dengan menegakkan estetika broadsheet editorial yang konsisten dan berintegritas tinggi.
+- Membuktikan kemahiran rekayasa web murni: sistem berjalan 100% dari berkas statis lokal, aksesibel tanpa JavaScript, dan memenuhi standar WCAG 2.2 AA.
+- Menyediakan fondasi arsitektur *content-as-code* yang dapat diperluas oleh kurator editorial tanpa ketergantungan pada CMS atau database eksternal.
 
 ---
 
-# 3. Pengguna & Peran (Users & Roles)
+## 3. Pengguna & Peran (Users & Roles)
 
-Situs berjalan sebagai aplikasi web statis murni tanpa sistem autentikasi login:
-
-| Peran | Deskripsi | Hak Akses & Kebutuhan |
-| :---- | :---- | :---- |
-| **Pengunjung Anonim (Pelayat)** | Pengguna publik umum yang menjelajahi lembaran memorial. | Membaca mimbar utama, menggeser penggaris kinetik, menelusuri katalog 15 lema, menyaring dekade, mengganti Edisi Pagi/Malam, dan mengklik logo untuk memuat ulang ke puncak. |
-| **Pengguna Aksesibilitas** | Pengguna pembaca layar (*screen reader*), pengguna keyboard, atau pengguna dengan preferensi gerak berkurang (*prefers-reduced-motion*). | Melewati navigasi via *skip-link*, navigasi penuh via Tab/Enter/Panah Keyboard, keterbacaan teks kontras tinggi, dan animasi kinetik otomatis mati jika mode gerak berkurang aktif. |
-| **Kurator Editorial** | Tim yang mengelola naskah dan basis kebenaran lema. | Mengelola berkas `js/data.js` secara langsung (*content-as-code*), memverifikasi data historis KBBI dan rujukan sastra sebelum dipublikasikan. |
+| Peran | Deskripsi & Hak Akses |
+| :--- | :--- |
+| **Pengunjung Anonim (Pelayat)** | Pengguna publik umum. Dapat membaca mimbar obituari, menggeser penggaris kinetik, menelusuri katalog 15 lema, menyaring berdasarkan dekade, mengganti Edisi Pagi/Malam, dan mengklik logo untuk memuat ulang halaman ke puncak. |
+| **Pengguna Aksesibilitas** | Pengguna dengan pembaca layar, navigasi keyboard penuh, atau preferensi *prefers-reduced-motion*. Dapat melewati navigasi via skip-link, menjelajah seluruh konten via Tab/Enter/Panah Keyboard, dan menikmati animasi kinetik yang otomatis dinonaktifkan sesuai preferensi sistem. |
+| **Kurator Editorial** | Tim internal yang mengelola basis data kata. Dapat mengubah dan menambah lema langsung di `js/data.js` (*content-as-code*), memverifikasi data historis KBBI dan rujukan sastra sebelum dipublikasikan. Tidak ada antarmuka admin — semua pengelolaan dilakukan di level berkas sumber. |
 
 ---
 
-# 4. Ruang Lingkup Aktual Produk (Current Scope & Features)
+## 4. Ruang Lingkup (Scope)
 
-N3KR0L0G1 telah berhasil diimplementasikan penuh dengan komponen arsitektur berikut:
+### 4.1 Termasuk (MVP)
 
-### 4.1 Bilah Navigasi Broadsheet (`B1L4H N4V1G4S1`)
-- **Logo Vektor Cetak (`[NK] N3KR0L0G1`):** Ikon surat kabar SVG terpotong rapi dengan stempel aksen merah terakota. Berfungsi sebagai tombol muat ulang (*reload*) bersih yang selalu mengembalikan pembaca ke puncak halaman.
-- **Navigasi Cepat:** Tautan langsung ke empat zona halaman (*Obituari*, *Katalog Lema*, *Perenungan*, *Kolofon*).
-- **Laci Menu Responsif:** Panel menu pop-up untuk layar ponsel/tablet dengan tombol `[Menu]` dan `[Tutup]` serta dukungan tombol Escape.
-- **Sakelar Edisi Pagi / Malam:** Tombol stempel edisi yang selalu terlihat di bilah atas baik desktop maupun layar gawai.
+- Bilah navigasi broadsheet responsif dengan laci menu mobile, sakelar Edisi Pagi/Malam, dan logo sebagai tombol reload ke puncak.
+- Panggung hero broadsheet dengan tagline editorial, tombol CTA katalog, penggaris 12-segmen interaktif, judul kinetik `N3KR0L0G1`, dan animasi masuk halus.
+- Pita telegraf berita bergerak berisi statistik kepunahan bahasa daerah Indonesia.
+- Mimbar obituari utama dinamis: tampilan tunggal satu lema dengan navigasi Sebelumnya/Berikutnya, navigasi keyboard, dan mistar kemajuan 15 lema.
+- Tiga kolom tajuk rencana editorial bergaya koran klasik.
+- Tiga kartu spesimen font variabel interaktif dengan kendali Animate/Hold.
+- Direktori katalog 15 lema dengan penyaring dekade, tombol acak, dan akordeon semantik berbasis `<details>` native.
+- Seksi perenungan pelayat dan kolofon cetak dengan kisi ledger mikro data.
+- Dua skema warna: Edisi Pagi (kertas koran hangat) dan Edisi Malam (arang kontras tinggi), tersimpan di `localStorage`.
 
-### 4.2 Panggung Pembuka Hero Broadsheet (`P4NGGUNG P3MBUK4 H3R0`)
-- **Baris Metadata:** Arsip Leksikografi Digital / 15 Lema / 5 Dekade.
-- **Badan Hero:** Tagline editorial *"Obituari memorial kata yang telah berpulang. Merawat ingatan bahasa dalam hening."* berdampingan dengan tombol CTA *"Buka Katalog Lema"* dan petunjuk gulir lembaran.
-- **Mistar Penggaris 12-Segmen:** Penggaris pembagian kolom broadsheet dengan penanda merah interaktif yang dapat digeser (*draggable/touchable*) untuk memanipulasi bobot huruf.
-- **Judul Kinetik Raksasa `N3KR0L0G1`:** Dibangun dengan font variabel multi-axis *Roboto Flex*, merespons kursor mouse dan geseran mistar secara lentur.
-- **Animasi Masuk Halus (*Smooth Entrance*):** Transisi pemunculan judul dan gelombang kinetik (*kinetic entrance wave*) yang mengalun mulus saat halaman pertama kali dimuat atau di-refresh.
+### 4.2 Di Luar Lingkup Awal / Fase Lanjutan
 
-### 4.3 Warta Telegraf Pusat (`W4RT4 T3L3GR4M PUSAT`)
-- Pita telegraf digital bergerak (*ticker loop*) berisi maklumat berkala statistik kepunahan bahasa daerah dan dinamika perbendaharaan kata Indonesia.
-
-### 4.4 Mimbar Obituari Utama Dinamis (`S3Ct10N A`)
-- **Panggung Editorial Tunggal:** Tempat satu lema ditampilkan secara megah dengan judul serif *Fraunces* raksasa, fonetik mesin tik, metadata lengkap (*Catatan Biografis Kata*), dan kutipan perpisahan sastra.
-- **Kendali Mimbar:** Tombol Sebelumnya/Berikutnya, navigasi panah keyboard (← / →), serta mistar kemajuan 15 lema (*segmented dash gauge*).
-- **Sinkronisasi Otomatis:** Perubahan lema di mimbar otomatis memperbarui status pembaca layar dan hash URL secara hening.
-
-### 4.5 Tajuk Rencana Editorial (`S3Ct10N B1`)
-- Tiga kolom naskah editorial bergaya surat kabar klasik (*The Jakarta Post*) yang mengulas urgensi kepunahan kata dari sudut pandang sosiolinguistik, sejarah, dan psikologis.
-
-### 4.6 Spesimen Kartu Leksikal (`S3Ct10N B2`)
-- Tiga kartu spesimen variabel (*ShockingMike typefaces cards*) yang mendemonstrasikan kelenturan tipografi:
-  1. *Fraunces* (Serif Editorial Obituari)
-  2. *Roboto Flex* (Sans Broadsheet Elastis)
-  3. *Recursive* (Mono Leksikografis Mesin Tik)
-- Dilengkapi tombol kendali spesimen hidup (*Animate/Hold*) dan tombol angkat lema ke mimbar utama.
-
-### 4.7 Direktori Katalog 15 Lema (`S3Ct10N B`)
-- **Penyaring Dekade:** Tombol filter *Semua Dekade*, *1970-an*, *1980-an*, *1990-an*, *2000-an*, dan *2010-an*.
-- **Aksi Acak:** Tombol *Pilih Obituari Acak* yang otomatis mengocok, membuka kartu, dan memusatkannya ke layar.
-- **Akordeon Semantik:** 15 entri lema lengkap menggunakan elemen `<details>` dan `<summary>` murni (dapat dibuka dan dibaca sempurna bahkan tanpa JavaScript).
-- **Kartu Lema Adaptif:** Kartu dengan mode terbalik (*inverted card*) saat dipilih, memastikan kontras sempurna baik pada Edisi Pagi maupun Edisi Malam.
-
-### 4.8 Perenungan Pelayat & Kolofon Cetak (`S3Ct10N C`)
-- Maklumat penutup editorial, kisi ledger tabular empat zona mikro data (Metodologi, Kurasi, Tipografi, Etika), tanda meterai raksasa (*wordmark watermark*), dan tombol kembali ke puncak lembaran.
+Lihat Bab 11. Fitur pencarian teks bebas antar lema, ekspor kartu obituari sebagai gambar, dan penambahan lema oleh publik via form tidak masuk MVP dan ditunda ke fase lanjutan.
 
 ---
 
-# 5. Desain Visual & Sistem Token Tipografi
+## 5. Asumsi & Batasan (Assumptions & Constraints)
 
-## 5.1 Filosofi Lembaran Koran Broadsheet
-- **Anti-SaaS / Anti-AI Slop:** Menghindari sudut melengkung besar, bayangan lembut melayang (*drop shadow*), dan warna neon. Digantikan oleh sudut 0px tajam (*knife cut*), garis pemisah 1px solid tegas, dan ruang kosong bernapas (*whitespace*).
-- **Tekstur Serat Kertas:** Lapisan *paper grain overlay* fisik berbasis SVG noise berdaya render ringan.
-
-## 5.2 Skema Warna Dua Edisi
-- **Edisi Pagi (Default):**
-  - Latar Kertas: `#EFEBE3` (kertas koran hangat alami)
-  - Kartu & Kotak: `#E8E3D9`
-  - Tinta Teks: `#0E0E0E` (hitam arang pekat)
-  - Garis Batas: `#0E0E0E` (tegas) dan `#8E8E93` (garis bantu halus)
-  - Aksen Redaksi: `#FF3B1A` (merah terakota vermilion)
-- **Edisi Malam (Night Edition):**
-  - Latar Kertas: `#161614` (arang malam khidmat)
-  - Kartu: `#1E1D1A`
-  - Tinta Teks: `#F4F0EA` (tinta krem cerah)
-  - Kartu Terpilih: `#FFFFFF` (putih murni kontras tinggi dengan teks gelap `#161614`)
-  - Aksen Redaksi: `#FF4D2D`
-
-## 5.3 Trio Font Variabel Lokal (Tanpa CDN Pihak Ketiga)
-Semua berkas font di-hosting mandiri di direktori lokal `./fonts/` dalam format kompresi modern `WOFF2`:
-1. **Fraunces Variable:** Font serif utama untuk judul lema, nama koran, dan naskah obituari.
-2. **Roboto Flex Variable:** Font sans dengan kontrol lebar dan bobot dinamis untuk judul `N3KR0L0G1` dan tajuk.
-3. **Recursive Variable:** Font monospace/sans beraksen mesin tik untuk tanggal, metadata, filter chip, dan kolofon.
+- **[Asumsi Pengembang]** Situs diakses via peramban modern yang mendukung CSS Custom Properties, Variable Fonts, dan `<details>` semantik native (Chrome 88+, Firefox 87+, Safari 14+).
+- **[Asumsi Pengembang]** Distribusi dilakukan via hosting statis (Cloudflare Pages atau setara) — tidak memerlukan runtime server, database, atau proses build.
+- Seluruh font (Fraunces, Roboto Flex, Recursive) di-hosting mandiri dalam format WOFF2 di direktori `./fonts/` — tidak ada ketergantungan CDN pihak ketiga maupun Google Fonts API.
+- Berkas `js/main.js` wajib dijaga di bawah 100 baris kode aktif sebagai bukti kemahiran logika DOM native.
+- Seluruh komentar di CSS, JS, dan HTML wajib bebas dari tanda kurung `()` untuk menjaga kebersihan audit otomatis.
+- Sistem berjalan penuh dari protokol `file://` (tanpa server lokal) maupun dari server HTTP — kompatibilitas keduanya wajib dijaga.
+- Konten lema bersifat statis dan dikurasi manual; tidak ada mekanisme penambahan konten secara dinamis dari sisi pengguna pada versi ini.
 
 ---
 
-# 6. Arsitektur Teknis & Standar Koding
+## 6. Kebutuhan Fungsional (Functional Requirements)
 
-## 6.1 Struktur Berkas Repositori
-```text
-N3KR0L0G1/
-├── index.html              # Markah semantik koran broadsheet lengkap (pre-rendered)
-├── favicon.svg             # Ikon surat kabar vektor mandiri
-├── css/
-│   ├── tokens.css          # Desain token 3-tier, reset modern, utilitas font
-│   ├── layout.css          # Kisi koran 12-kolom, panggung hero, responsive queries
-│   └── components.css      # Komponen akordeon, mistar, spesimen, tema malam
-├── js/
-│   ├── data.js             # Basis kebenaran 15 lema kata dan validasi internal
-│   ├── render.js           # Mesin kinetik hero, simulator spesimen, drawer navigasi
-│   └── main.js             # Interaktivitas inti (tetap di bawah 100 baris kode)
-├── fonts/                  # Berkas WOFF2 lokal Fraunces, Roboto Flex, dan Recursive
-└── docs/
-    └── N3KR0L0G1.md        # Dokumen Kebutuhan Produk (PRD) komprehensif
-```
+### 6.1 Pengunjung — Navigasi & Orientasi Halaman
 
-## 6.2 Batasan Kualitas Koding FSC
-1. **Disiplin JavaScript Ringkas:**
-   - Berkas `js/main.js` dirancang ringkas dan padat, terjaga secara ketat di bawah 100 baris (saat ini 97 baris) untuk membuktikan kemahiran logika DOM native tanpa bloatware.
-2. **Kerapian Komentar Bebas Kurung (*Zero Parentheses in Comments*):**
-   - Seluruh komentar pada berkas CSS, JS, dan HTML 100% bebas dari tanda kurung `()`, menjaga kebersihan parsing regex dan audit otomatis.
-3. **Komentar Santai & Bukan Puitis:**
-   - Menghilangkan komentar berbunga-bunga, digantikan catatan pengembang santai dan jelas, dengan tetap mempertahankan penamaan leet heading asli (`B1L4H N4V1G4S1...`, `P4NGGUNG P3MBUK4 H3R0`, dll.).
-4. **Bebas Karakter Terlarang:**
-   - Bebas karakter bullet `•`, pipa `|`, em-dash `—`, dan titik dua di teks tampil, mematuhi standar desain editorial murni.
-5. **Progressive Enhancement (Bisa Diakses Tanpa JS):**
-   - Saat JavaScript dimatikan, seluruh 15 lema tetap dapat dibuka dan dibaca lengkap karena struktur akordeon menggunakan `<details>` semantik native browser.
+| ID | Kebutuhan Fungsional | Prioritas |
+| :--- | :--- | :--- |
+| NAV-1 | Pengunjung dapat mengklik logo `[NK] N3KR0L0G1` di bilah atas untuk melakukan reload halaman bersih dan kembali ke puncak lembaran. | Wajib |
+| NAV-2 | Pengunjung dapat membuka laci menu mobile dengan tombol `[MENU]` dan menutupnya via tombol `[TUTUP]` atau tombol Escape. | Wajib |
+| NAV-3 | Pengunjung dapat mengklik tautan navigasi cepat menuju empat zona halaman: Obituari, Katalog Lema, Perenungan, dan Kolofon. | Wajib |
+| NAV-4 | Sistem menampilkan sakelar Edisi Pagi/Malam yang selalu terlihat di bilah atas baik di desktop maupun layar gawai. | Wajib |
 
----
+### 6.2 Pengunjung — Edisi & Tema
 
-# 7. Model Data 15 Lema Kata (`js/data.js`)
+| ID | Kebutuhan Fungsional | Prioritas |
+| :--- | :--- | :--- |
+| TEMA-1 | Pengunjung dapat beralih antara Edisi Pagi dan Edisi Malam via tombol sakelar di bilah navigasi. | Wajib |
+| TEMA-2 | Sistem menyimpan preferensi edisi ke `localStorage` sehingga pilihan bertahan saat halaman di-refresh atau dibuka kembali. | Wajib |
+| TEMA-3 | Sistem menerapkan warna kartu terpilih yang terbalik otomatis (putih solid `#FFFFFF` dengan teks gelap) saat Edisi Malam aktif agar kontras tetap terbaca. | Wajib |
 
-Model data leksikal terpusat pada objek `WORD_ENTRIES` dengan skema tervalidasi:
+### 6.3 Pengunjung — Panggung Hero & Tipografi Kinetik
 
-| Field | Tipe | Deskripsi |
-| :---- | :---- | :---- |
-| `id` | string | Pengenal unik lema (mis. `"renjana"`, `"tetiron"`). |
-| `name` | string | Nama lema yang berpulang. |
-| `ipa` | string | Transkripsi fonetis pelafalan kata. |
-| `pos` | string | Kelas kata (Nomina, Verba, Adjektiva). |
-| `desc` | string | Deskripsi memorial dan definisi esensial kata. |
-| `yearFirst` | number | Tahun pertama kali tercatat dalam pustaka tertulis. |
-| `yearLast` | number | Tahun terakhir terlihat aktif di ruang publik. |
-| `cause` | string | Penyebab kepergian/kematian kata (mis. digantikan istilah asing/modern). |
-| `survived` | string | Kosakata turunan yang masih bertahan atau padanan masa kini. |
-| `quote` | string | Kutipan sastra atau arsip bersejarah penggunaan kata. |
-| `source` | string | Sumber rujukan sastrawan atau media cetak asli. |
-| `decade` | string | Kategori dekade kematian (`"1970-an"` s.d. `"2010-an"`). |
+| ID | Kebutuhan Fungsional | Prioritas |
+| :--- | :--- | :--- |
+| HERO-1 | Sistem menampilkan animasi masuk halus saat halaman pertama dimuat: judul `N3KR0L0G1` muncul bertahap dengan gelombang kinetik per karakter. | Wajib |
+| HERO-2 | Pengunjung dapat menggeser penggaris 12-segmen (drag mouse / swipe sentuh) untuk mengubah bobot tipografi judul kinetik secara real-time. | Wajib |
+| HERO-3 | Judul kinetik merespons posisi kursor mouse di area hero dengan perubahan bobot dan lebar font secara lentur melalui siklus `requestAnimationFrame`. | Penting |
+| HERO-4 | Sistem menonaktifkan seluruh animasi kinetik otomatis saat `prefers-reduced-motion: reduce` terdeteksi aktif di sistem pengguna. | Wajib |
 
----
+### 6.4 Pengunjung — Mimbar Obituari Utama
 
-# 8. Kebutuhan Non-Fungsional (NFR) Terverifikasi
+| ID | Kebutuhan Fungsional | Prioritas |
+| :--- | :--- | :--- |
+| OBT-1 | Sistem menampilkan satu lema sekaligus di mimbar utama dengan judul serif raksasa, fonetik mesin tik, metadata biografis lengkap, dan kutipan perpisahan sastra. | Wajib |
+| OBT-2 | Pengunjung dapat berpindah antar lema via tombol Sebelumnya dan Berikutnya di panel kendali mimbar. | Wajib |
+| OBT-3 | Pengunjung dapat berpindah antar lema menggunakan tombol panah kiri/kanan pada keyboard. | Wajib |
+| OBT-4 | Sistem memperbarui hash URL secara hening saat lema berganti agar tautan langsung ke lema tertentu dapat dibagikan. | Penting |
+| OBT-5 | Sistem memperbarui status `aria-live` pembaca layar saat lema berganti agar pengguna aksesibilitas mendapat informasi terkini. | Wajib |
 
-1. **Performa Web (Core Web Vitals):**
-   - **LCP ≤ 1.2 detik:** Font lokal dimuat instan tanpa round-trip DNS eksternal, teks hero pre-rendered.
-   - **CLS = 0:** Penataan wadah hero berukuran eksplisit menggunakan `container-query` dan rasio tinggi baris presisi.
-   - **INP ≤ 50 ms:** Logika pergerakan kinetik dijalankan pada siklus `requestAnimationFrame` dengan peredam pegas fisika (*spring damping*).
-2. **Aksesibilitas (WCAG 2.2 AA):**
-   - Rasio kontras teks terpenuhi minimum 4.5:1 pada kedua tema (Pagi dan Malam).
-   - Indikator fokus `:focus-visible` dengan outline aksen merah tegas untuk navigasi keyboard.
-   - Area klik/sentuh tombol navigasi dan filter chip memenuhi standar minimum 44×44 CSS px.
-   - Deteksi `@media (prefers-reduced-motion: reduce)` yang mematikan seluruh transisi berat dan gelombang kinetik secara instan.
-3. **Privasi & Keamanan:**
-   - **Nol Pelacakan:** Tanpa cookies, tanpa telemetri analitik, tanpa Google Fonts API (zero IP leak).
-   - Preferensi edisi malam hanya disimpan secara lokal di `localStorage` peramban pengguna.
-   - Dukungan file `_headers` untuk deklarasi CSP (*Content Security Policy*) ketat pada Cloudflare Pages.
+### 6.5 Pengunjung — Katalog 15 Lema
+
+| ID | Kebutuhan Fungsional | Prioritas |
+| :--- | :--- | :--- |
+| KAT-1 | Pengunjung dapat menyaring katalog berdasarkan dekade: Semua Dekade, 1970-an, 1980-an, 1990-an, 2000-an, dan 2010-an. | Wajib |
+| KAT-2 | Pengunjung dapat membuka dan menutup kartu lema secara individual via elemen `<details>` semantik native. | Wajib |
+| KAT-3 | Pengunjung dapat menekan tombol *Pilih Obituari Acak* untuk memilih lema secara acak, membuka kartunya secara otomatis, dan menggulir layar ke kartu tersebut. | Penting |
+| KAT-4 | Sistem menampilkan kartu dengan mode terbalik saat sebuah lema sedang aktif di mimbar, konsisten di kedua tema. | Wajib |
+| KAT-5 | Seluruh 15 lema dapat dibuka dan dibaca lengkap tanpa JavaScript aktif, karena akordeon menggunakan `<details>` native browser. | Wajib |
+
+### 6.6 Pengunjung — Spesimen Kartu Leksikal
+
+| ID | Kebutuhan Fungsional | Prioritas |
+| :--- | :--- | :--- |
+| SPE-1 | Sistem menampilkan tiga kartu spesimen font variabel: Fraunces, Roboto Flex, dan Recursive, masing-masing dengan teks lema aktif. | Wajib |
+| SPE-2 | Pengunjung dapat mengaktifkan animasi variabel font pada kartu spesimen via tombol *Animate* dan menghentikannya via tombol *Hold*. | Penting |
+| SPE-3 | Pengunjung dapat mengangkat lema dari katalog ke mimbar utama via tombol di kartu spesimen. | Penting |
 
 ---
 
-# 9. Penyesuaian Resolusi & Keputusan Desain (Design Resolutions)
+## 7. Alur Pengguna Utama (Key User Flows)
 
-Berikut adalah status mutakhir dari keputusan arsitektur proyek:
+### 7.1 Pengunjung Membaca Obituari Kata
 
-| Pertanyaan / Isu | Status | Keputusan & Solusi yang Diambil |
-| :---- | :---- | :---- |
-| **Penyediaan Font Lokal** | **TERSELESAIKAN** | Menggunakan 3 font variabel lokal (*Fraunces*, *Roboto Flex*, *Recursive*) format WOFF2 di `./fonts/`, mematuhi privasi mutlak. |
-| **Ketersediaan Edisi Malam** | **TERSELESAIKAN** | Disediakan tombol sakelar tema di bilah atas. Kartu terpilih di edisi malam otomatis terbalik menjadi putih solid (`#FFFFFF`) agar teks terbaca sangat jelas. |
-| **Tampilan Responsif Mobile** | **TERSELESAIKAN** | Tata letak hero pada mobile diubah menjadi flex-kolom fleksibel; tombol tema diletakkan berdampingan dengan tombol Menu di navbar atas. |
-| **Perilaku Refresh Halaman** | **TERSELESAIKAN** | Diatur `history.scrollRestoration = 'manual'` dan `window.scrollTo(0, 0)` sehingga refresh selalu mengulang pengalaman dari puncak lembaran. |
-| **Interaksi Klik Logo** | **TERSELESAIKAN** | Mengklik `[NK] N3KR0L0G1` di navbar atas membersihkan hash URL dan memuat ulang halaman (*clean refresh*) ke puncak. |
-| **Animasi Masuk Hero** | **TERSELESAIKAN** | Ditambahkan transisi pemunculan lembut `hero-wm-in` dan gelombang kinetik huruf `playEntranceWave()`, menghapus kesan kaku saat situs dibuka. |
-| **Batas Baris Script Utama** | **TERSELESAIKAN** | Berkas `js/main.js` dioptimalkan tetap di bawah 100 baris (97 baris kode aktif). |
-| **Penyederhanaan Komentar** | **TERSELESAIKAN** | Komentar kode diubah dari gaya puitis menjadi catatan teknis santai, dengan 0 tanda kurung di seluruh berkas. |
+1. Pengunjung membuka halaman — animasi masuk hero berjalan halus, judul `N3KR0L0G1` muncul bertahap.
+2. Pengunjung membaca tagline editorial di badan hero dan menekan tombol *Buka Katalog Lema*.
+3. Halaman menggulir ke direktori katalog; pengunjung menekan filter dekade (misal: *1980-an*).
+4. Sistem menyembunyikan lema di luar dekade tersebut dan menampilkan hanya yang relevan.
+5. Pengunjung mengklik kartu lema — akordeon membuka, detail obituari lengkap terlihat.
+6. Pengunjung menekan tombol *Angkat ke Mimbar* — lema berpindah ke panggung obituari utama.
+7. Pengunjung membaca metadata biografis, kutipan sastra, dan informasi kepergian kata secara penuh.
+
+### 7.2 Pengunjung Menjelajahi Penggaris Kinetik
+
+1. Pengunjung berada di area hero, melihat penggaris 12-segmen di bawah badan teks.
+2. Pengunjung menggeser penanda merah ke kanan — bobot font judul `N3KR0L0G1` meningkat secara cair.
+3. Pengunjung menggeser ke kiri — bobot menurun, font menjadi ramping.
+4. Di perangkat sentuh, gestur swipe horizontal pada penggaris bekerja identik dengan drag mouse.
+
+### 7.3 Pengunjung Beralih Edisi
+
+1. Pengunjung melihat tombol edisi di bilah navigasi (misal: *PAGI*).
+2. Pengunjung menekan tombol — seluruh skema warna halaman berganti ke Edisi Malam seketika.
+3. Sistem menyimpan preferensi ke `localStorage`; saat halaman di-refresh, edisi malam tetap aktif.
+4. Kartu lema yang sedang terpilih otomatis berganti menjadi latar putih solid agar tetap terbaca.
+
+### 7.4 Pengunjung Menavigasi Antar Lema via Keyboard
+
+1. Pengunjung menekan tombol panah kanan `→` — mimbar berpindah ke lema berikutnya, hash URL diperbarui.
+2. Pengunjung menekan `←` — kembali ke lema sebelumnya.
+3. Pembaca layar mengumumkan nama lema baru via region `aria-live`.
+4. Mistar kemajuan 15 lema di bawah kendali mimbar memperbarui posisi aktif.
+
+### 7.5 Pengunjung Me-refresh Halaman
+
+1. Pengunjung menekan F5 atau tombol reload peramban.
+2. Sistem menjalankan `history.scrollRestoration = 'manual'` dan `window.scrollTo(0, 0)` saat load.
+3. Halaman selalu kembali ke puncak lembaran, bukan ke posisi scroll terakhir.
+4. Animasi masuk hero berjalan kembali dari awal — pengalaman dimulai ulang secara penuh.
 
 ---
 
-# 10. Glosarium Singkat
+## 8. Model Data (High-Level)
 
-- **Broadsheet:** Format ukuran surat kabar cetak fisik tradisional paling lebar; menjadi metafora dasar tata letak N3KR0L0G1.
-- **Lema:** Butir masukan kata pokok dalam kamus yang menjadi subjek dalam obituari.
-- **Font Variabel (Variable Font):** Teknologi font modern di mana bobot (*weight*), lebar (*width*), dan parameter tipografi lain dapat diubah secara cair pada satu berkas font tunggal.
-- **Progressive Enhancement:** Filosofi pengembangan web yang memastikan dokumen HTML dasar dapat dibaca dan dioperasikan 100% tanpa JavaScript, kemudian ditingkatkan kemampuannya ketika JavaScript aktif.
-- **Edisi Malam:** Adaptasi tema gelap koran broadsheet tanpa merusak nuansa kertas cetak dan keterbacaan teks.
+| Entitas | Field Utama | Keterangan |
+| :--- | :--- | :--- |
+| `WORD_ENTRY` | `id`, `headword`, `pronunciation`, `part_of_speech`, `definition`, `first_recorded`, `last_seen`, `last_seen_context`, `cause_of_death`, `farewell_quote`, `etymology`, `survived_by`, `curator_note`, `tags` | Objek utama lema. Satu entri per kata yang berpulang. Disimpan di `js/data.js` sebagai array objek JS literal. |
+| `farewell_quote` | `text`, `source`, `year` | Sub-objek kutipan perpisahan yang tersemat dalam setiap `WORD_ENTRY`. |
+| `SITE_META` | `title`, `tagline`, `edition`, `publication_date`, `rubric`, `curator_name`, `sources`, `colophon_note` | Metadata global lembaran terbitan. Dirender ke elemen header dan kolofon. |
+| `UI_STATE` | `currentIndex`, `nightMode`, `activeDecade` | Status antarmuka runtime yang dikelola di memori JS dan sebagian disimpan di `localStorage`. Bukan entitas persisten — tidak ada database. |
+
+Catatan: tidak ada entitas Fase Lanjutan pada model data saat ini. Jika fitur pencarian teks bebas atau penambahan lema oleh publik diimplementasikan, model data akan diperluas dengan entitas `SEARCH_INDEX` dan mekanisme pengiriman konten terpisah.
+
+---
+
+## 9. Kebutuhan Non-Fungsional (Non-Functional Requirements)
+
+- **Performa:** LCP ≤ 1.2 detik via font lokal WOFF2 tanpa round-trip DNS; CLS = 0 via wadah hero berukuran eksplisit; INP ≤ 50 ms via loop `requestAnimationFrame` dengan peredam pegas fisika.
+- **Responsivitas:** Mobile-first. Tata letak hero beralih ke flex-kolom pada layar ≤ 768px; tombol tema berdampingan dengan tombol menu di navbar; area sentuh minimum 44×44 CSS px.
+- **Aksesibilitas:** Kontras teks minimum 4.5:1 pada kedua tema (WCAG 2.2 AA); skip-link ke konten utama; indikator fokus `:focus-visible` dengan outline aksen merah; seluruh animasi kinetik dinonaktifkan via `prefers-reduced-motion`.
+- **Privasi:** Nol cookies pihak ketiga; nol telemetri analitik; nol request ke Google Fonts API. Satu-satunya data yang disimpan lokal adalah preferensi tema di `localStorage` pengguna sendiri.
+- **Keamanan:** Dukungan berkas `_headers` untuk CSP ketat di Cloudflare Pages; tidak ada input pengguna yang diproses ke server; tidak ada form yang mengirim data.
+- **Portabilitas:** Berjalan via protokol `file://` maupun HTTP tanpa konfigurasi tambahan; tidak memerlukan proses build, bundler, atau runtime Node.js.
+- **Keterbacaan Kode:** `js/main.js` dijaga di bawah 100 baris; seluruh komentar bebas tanda kurung `()`; penamaan variabel dan fungsi konsisten dalam bahasa Inggris teknis.
+
+---
+
+## 10. Integrasi Pihak Ketiga
+
+| Layanan | Fungsi | Catatan |
+| :--- | :--- | :--- |
+| KBBI Daring (kemdikbud.go.id) | Rujukan verifikasi definisi dan status arkais lema | Hanya sebagai sumber kurasi manual — tidak ada API call runtime |
+| Arsip Majalah Poedjangga Baroe | Sumber kutipan sastra historis lema dekade 1930-an | Hanya sebagai referensi kurasi konten |
+| Cloudflare Pages | Hosting statis dan penerapan CSP via `_headers` | Opsional; situs juga berjalan dari hosting statis lain atau lokal |
+
+Sistem tidak melakukan request eksternal apapun saat runtime. Semua aset (font, ikon, CSS, JS) bersifat lokal dan terbundel dalam repositori.
+
+---
+
+## 11. Fitur Usulan / Fase Lanjutan
+
+**Pencarian Teks Bebas.** Kotak pencarian yang memungkinkan pengunjung mencari lema berdasarkan kata kunci di definisi, etimologi, atau kutipan. Membutuhkan indeks pencarian client-side (mis. Fuse.js atau implementasi native serupa) tanpa backend.
+
+**Ekspor Kartu Obituari.** Tombol untuk mengunduh kartu lema aktif sebagai gambar PNG bergaya editorial — cocok untuk dibagikan di media sosial tanpa melanggar prinsip anti-fitur-sosial (karena ekspor dilakukan oleh pengguna, bukan auto-share). Membutuhkan Canvas API atau library html2canvas.
+
+**Penambahan Lema oleh Publik.** Form pengajuan kata yang berpulang oleh pembaca — dikirim ke sistem kurasi (mis. Airtable atau GitHub Issues sebagai inbox), kemudian diverifikasi secara manual sebelum masuk ke `js/data.js`. Membutuhkan endpoint atau integrasi form pihak ketiga.
+
+**Edisi Arsip Terbitan Berkala.** Mekanisme penerbitan edisi baru secara periodik (mis. tiap bulan) dengan set lema berbeda, layaknya koran cetak yang terbit rutin. Membutuhkan sistem manajemen konten sederhana atau pemisahan berkas `data-edisi-N.js`.
+
+---
+
+## 12. Pertanyaan Terbuka / TBD
+
+- Apakah lema akan terus ditambah secara berkala, atau 15 lema merupakan jumlah final untuk versi ini?
+- Siapa kurator editorial resmi yang bertanggung jawab atas keakuratan data historis KBBI dan kutipan sastra?
+- Apakah domain kustom akan digunakan untuk deployment publik, atau cukup subdomain Cloudflare Pages?
+- Belum ada timeline resmi untuk pengerjaan fitur Fase Lanjutan (pencarian, ekspor, form pengajuan publik).
+- Apakah versi cetak (PDF) dari lembaran koran digital ini diperlukan untuk kebutuhan fisik FSC?
+
+---
+
+## 13. Glosarium
+
+- **Broadsheet:** Format ukuran surat kabar cetak fisik tradisional paling lebar — menjadi metafora dasar tata letak dan estetika N3KR0L0G1.
+- **Lema:** Butir masukan kata pokok dalam kamus yang menjadi subjek obituari di sistem ini.
+- **Font Variabel (Variable Font):** Teknologi font modern di mana bobot, lebar, dan parameter tipografi lain dapat diubah secara cair dalam satu berkas font tunggal via CSS atau JavaScript.
+- **Progressive Enhancement:** Filosofi pengembangan web yang memastikan dokumen HTML dasar dapat dibaca dan dioperasikan 100% tanpa JavaScript, kemudian ditingkatkan kemampuannya saat JavaScript aktif.
+- **Edisi Malam:** Adaptasi tema gelap koran broadsheet dengan latar arang `#161614` dan tinta krem `#F4F0EA` — tanpa merusak nuansa kertas cetak dan keterbacaan teks.
+- **Kinetik (Kinetic Typography):** Tipografi yang bergerak atau merespons input pengguna secara real-time; diimplementasikan via `requestAnimationFrame` dan CSS font-variation-settings.
+- **Content-as-Code:** Pendekatan pengelolaan konten di mana data lema disimpan langsung di berkas JavaScript (`js/data.js`) sebagai bagian dari repositori kode — tidak memerlukan CMS atau database terpisah.
+- **LSP / arkais:** Lema Satu Penggunaan atau kata yang telah jarang atau tidak lagi digunakan di ruang publik dan percakapan sehari-hari — kategori utama kata yang diarsipkan N3KR0L0G1.
+
+---
+
+*Dokumen ini mencerminkan status implementasi final per 24 Oktober 2026 dan dapat diperbarui seiring perkembangan fase lanjutan.*
