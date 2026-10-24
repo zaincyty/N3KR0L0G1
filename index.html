@@ -13,10 +13,18 @@ N3KR0L0G1 - index.html
   <meta name="keywords" content="obituari kata, bahasa indonesia, kbbi, poedjangga baroe, kata arkais, memorial bahasa">
   <meta name="author" content="Tim Kurator NEKROLOGI">
   <meta name="theme-color" content="#EFEBE3">
-  
+
   <title>NEKROLOGI / Lembaran Kata yang Telah Berpulang</title>
 
   <!-- stylesheet css (ditambah versi agar browser HP tidak menahan cache lawas) -->
+  <link rel="stylesheet" href="css/tokens.css?v=1.1">
+  <link rel="stylesheet" href="css/layout.css?v=1.1">
+  <link rel="stylesheet" href="css/components.css?v=1.1">
+
+  <script src="js/data.js?v=1.1" defer></script>
+  <script src="js/render.js?v=1.1" defer></script>
+  <script src="js/main.js?v=1.1" defer></script>
+
   <link rel="stylesheet" href="css/tokens.css?v=20261024b">
   <link rel="stylesheet" href="css/layout.css?v=20261024b">
   <link rel="stylesheet" href="css/components.css?v=20261024b">
@@ -27,7 +35,7 @@ N3KR0L0G1 - index.html
 <body>
   <!-- lapisan tekstur serat kertas koran fisik  -->
   <div class="paper-grain-overlay" aria-hidden="true"></div>
-  
+
   <!-- aksesibilitas: tahap langkah a navigasi -->
   <a href="#konten-utama" class="skip-link">Lompat langsung ke lembaran obituari utama</a>
 
@@ -48,7 +56,7 @@ N3KR0L0G1 - index.html
       </svg>
       <span class="logo__brand">N3KR0L0G1</span>
     </a>
-    
+
     <div class="nav__panel" id="nav-panel">
       <nav class="nav__links" aria-label="Navigasi Lembaran Obituari">
         <a href="#obituari-utama">Obituari</a>
@@ -176,7 +184,7 @@ N3KR0L0G1 - index.html
           <p class="lead-deck">
             “<span id="lead-deck-text">Rasa hati yang kuat, rindu batin yang mendalam, gelegak asmara yang sublim.</span>”
           </p>
-          
+
           <div class="lead-meta-bar" role="group" aria-label="Informasi Leksikografi Lema">
             <span class="phonetic mono" id="lead-phonetic">/rən.ja.na/</span>
             <span class="meta-divider" aria-hidden="true">/</span>
@@ -330,7 +338,7 @@ N3KR0L0G1 - index.html
 
     <!-- S3Ct10N B: indeks kata berpulang - daftar 15 lema obituari - -->
     <section class="word-index" id="indeks-kata" aria-labelledby="index-heading">
-      
+
       <header class="index-header">
         <h2 id="index-heading">
           <svg class="section-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
@@ -343,7 +351,7 @@ N3KR0L0G1 - index.html
 
       <!-- bilah navigasi filter & aksi interaksi -->
       <div class="index-toolbar" role="toolbar" aria-label="Alat Penyaring Dekade dan Penjelajah Arsip">
-        
+
         <!-- filter berdasarkan dekade -->
         <nav class="decade-navigation" aria-label="Penyaring Dekade Obituari">
           <span class="filter-label">Saring Dekade</span>
@@ -366,7 +374,7 @@ N3KR0L0G1 - index.html
         <!-- pengumuman status untuk pembaca layar - ramah aksesibilitas - -->
         <output id="index-status" class="index-status" role="status" aria-live="polite">
           Menampilkan seluruh 15 kata dari 5 dekade peringatan.
-          </output> 
+          </output>
       </div>
 
       <!-- direktori katalog 15 lema - murni pakai tag details tanpa js - -->
@@ -669,7 +677,7 @@ N3KR0L0G1 - index.html
                     <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
                   </button>
                 </div>
-              </article>  
+              </article>
             </details>
           </li>
 
@@ -849,7 +857,7 @@ N3KR0L0G1 - index.html
               </summary>
               <article class="entry-dossier" aria-label="Obituari kata sawala">
                 <header class="dossier-header">
-                  <h3>sawala <span class="phonetic">/sa.wa.la/</span></h3>  
+                  <h3>sawala <span class="phonetic">/sa.wa.la/</span></h3>
                   <p class="pos-badge">nomina / Sunda / Melayu Klasik</p>
                 </header>
                 <p class="definition-text">
@@ -920,7 +928,7 @@ N3KR0L0G1 - index.html
                     <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
                   </button>
                 </div>
-              </article>      
+              </article>
             </details>
           </li>
 
@@ -995,7 +1003,7 @@ N3KR0L0G1 - index.html
                   <dd><em>memansorkan</em> (mencabut atau membatalkan suatu piagam kesepakatan).</dd>
                 </dl>
                 <figure class="farewell-quote">
-                  <blockquote>                    
+                  <blockquote>
                     <p>“Piagam itu kini telah mansor dimakan zaman, namun rasa keadilannya masih terpatri di dalam ingatan para tetua kampung.”</p>
                   </blockquote>
                   <figcaption>Lembaran Maklumat Adat Nusantara (<time datetime="1962">1962</time>)</figcaption>
@@ -1006,7 +1014,7 @@ N3KR0L0G1 - index.html
                     <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
                   </button>
                 </div>
-              </article>      
+              </article>
             </details>
           </li>
       </ol>
@@ -1031,7 +1039,7 @@ N3KR0L0G1 - index.html
             <em>“Kata apa yang Anda sendiri sadari telah Anda lupakan sepanjang hidup Anda?”</em>
           </p>
         </div>
-      </section>  
+      </section>
 
     </main>
 
