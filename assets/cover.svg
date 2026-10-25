@@ -1,16 +1,57 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="520" viewBox="0 0 1600 520">
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="520" viewBox="0 0 1600 520" role="img" aria-labelledby="title desc">
+<title id="title">N3KR0L0G1 — Arsip Leksikografi Digital</title>
+<desc id="desc">Masthead broadsheet dengan tinta hitam, aksen merah, kertas hangat, dan ilustrasi botani arsip.</desc>
+<defs>
+ <pattern id="grain" width="22" height="22" patternUnits="userSpaceOnUse">
+  <circle cx="2" cy="5" r=".7" fill="#8A8171" opacity=".22"/><circle cx="17" cy="16" r=".6" fill="#8A8171" opacity=".17"/>
+  <path d="M6 20h3M13 3h2" stroke="#8A8171" stroke-width=".5" opacity=".15"/>
+ </pattern>
+ <pattern id="rules" width="11" height="11" patternUnits="userSpaceOnUse"><path d="M0 10.5H11" stroke="#0E0E0E" opacity=".05"/></pattern>
+</defs>
 <rect width="1600" height="520" fill="#EFEBE3"/>
-<rect x="28" y="28" width="1544" height="464" fill="none" stroke="#0E0E0E" stroke-width="2"/>
+<rect width="1600" height="520" fill="url(#grain)"/>
+<rect x="26" y="25" width="1548" height="470" fill="none" stroke="#0E0E0E" stroke-width="2"/>
+<rect x="35" y="34" width="1530" height="452" fill="none" stroke="#0E0E0E" stroke-width=".7"/>
 <g fill="#0E0E0E" font-family="Georgia, 'Times New Roman', serif">
-<text x="64" y="76" font-size="19" letter-spacing="4">ARSIP LEKSIKOGRAFI DIGITAL</text>
-<text x="1535" y="76" font-size="18" text-anchor="end" letter-spacing="2">EDISI 001 · INDONESIA</text>
-<line x1="64" y1="96" x2="1536" y2="96" stroke="#0E0E0E" stroke-width="2"/>
-<text x="64" y="285" font-size="174" font-weight="700" letter-spacing="-9">N3KR0L0G1</text>
-<text x="70" y="340" font-size="27" font-style="italic">Kata-kata yang pergi, tidak harus hilang.</text>
-<line x1="64" y1="370" x2="1536" y2="370" stroke="#0E0E0E" stroke-width="1"/>
-<text x="64" y="412" font-size="18" letter-spacing="3">OBITUARI · KATALOG LEMA · TIPOGRAFI KINETIK</text>
-<text x="64" y="455" font-size="16">SEBUAH LEMBARAN UNTUK KATA YANG PERLAHAN TERLUPAKAN</text>
+ <text x="62" y="69" font-size="17" letter-spacing="3">ARSIP LEKSIKOGRAFI DIGITAL</text>
+ <text x="1538" y="69" font-size="15" text-anchor="end" letter-spacing="2">LEMBARAN NO. 001  /  INDONESIA</text>
 </g>
-<g fill="none" stroke="#B42318" stroke-width="3"><path d="M1390 410 h130"/><path d="M1450 390 v40"/><circle cx="1450" cy="410" r="28"/></g>
-<text x="1450" y="414" text-anchor="middle" fill="#B42318" font-family="monospace" font-size="14">NK</text>
+<line x1="62" y1="86" x2="1538" y2="86" stroke="#0E0E0E" stroke-width="2"/>
+<!-- typographic headline -->
+<g font-family="Georgia, 'Times New Roman', serif" font-weight="900" letter-spacing="-11">
+ <text x="54" y="274" font-size="169" fill="#0E0E0E">N3KR</text>
+ <text x="448" y="274" font-size="169" fill="#B42318">0</text>
+ <text x="550" y="274" font-size="169" fill="#0E0E0E">L</text>
+ <text x="645" y="274" font-size="169" fill="#B42318">0</text>
+ <text x="746" y="274" font-size="169" fill="#0E0E0E">G1</text>
+</g>
+<g font-family="Georgia, 'Times New Roman', serif" fill="#0E0E0E">
+ <text x="64" y="320" font-size="25" font-style="italic">Kata-kata yang pergi, tidak harus hilang.</text>
+ <text x="64" y="351" font-size="15" letter-spacing="2">OBITUARI  ·  KATALOG LEMA  ·  TIPOGRAFI KINETIK</text>
+</g>
+<line x1="62" y1="373" x2="1538" y2="373" stroke="#0E0E0E" stroke-width="1.5"/>
+<!-- left colophon -->
+<g fill="#0E0E0E" font-family="monospace" font-size="12">
+ <text x="64" y="405">KORAN YA KORAN, REK.</text>
+ <text x="64" y="426">KARENA SETIAP KATA PUNYA MASA.</text>
+ <text x="64" y="468" letter-spacing="2">EST. 2026</text>
+</g>
+<!-- editorial flower engraving -->
+<g transform="translate(1240,210)" fill="none" stroke="#0E0E0E" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+ <path d="M20 154C48 112 60 72 67 13M52 102C19 93 3 71 4 42C30 51 49 70 52 102ZM63 72C89 55 99 32 96 7C75 21 64 45 63 72ZM33 133C10 130 -5 113 -8 92C15 98 28 113 33 133Z"/>
+ <path d="M67 22C45 15 39 -4 50 -23C67 -10 73 5 67 22ZM67 22C83 6 101 6 111 17C98 33 81 34 67 22ZM67 22C58 2 64 -13 80 -20C88 -3 82 13 67 22Z"/>
+ <path d="M109 153C124 123 126 88 121 51M116 104C140 92 150 76 151 56C130 64 118 80 116 104Z"/>
+ <path d="M6 158H158" stroke-width="1"/>
+</g>
+<g transform="translate(1436,130)">
+ <circle cx="0" cy="0" r="53" fill="none" stroke="#B42318" stroke-width="2"/>
+ <circle cx="0" cy="0" r="46" fill="none" stroke="#B42318" stroke-width=".8"/>
+ <g fill="#B42318" font-family="Georgia, serif" text-anchor="middle">
+  <text y="-14" font-size="10" letter-spacing="1">ARSIP</text><text y="0" font-size="10" letter-spacing="1">BAHASA</text><text y="14" font-size="10" letter-spacing="1">INDONESIA</text>
+ </g>
+ <path d="M-18 25L-5 33L20 15" fill="none" stroke="#B42318" stroke-width="2.5"/>
+</g>
+<g fill="#0E0E0E" opacity=".65" font-family="Georgia, serif" font-size="11">
+ <text x="1125" y="425">SEBUAH RUANG UNTUK</text><text x="1125" y="442">KATA YANG PERNAH HIDUP.</text>
+</g>
 </svg>

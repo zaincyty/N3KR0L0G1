@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<rect width="1200" height="630" fill="#EFEBE3"/>
+<defs><pattern id="grain2" width="25" height="25" patternUnits="userSpaceOnUse"><circle cx="3" cy="6" r=".8" fill="#6B6B68" opacity=".25"/><path d="M14 20h5" stroke="#6B6B68" opacity=".12"/></pattern></defs>
+<rect width="1200" height="630" fill="url(#grain2)"/>
+<rect x="22" y="22" width="1156" height="586" fill="none" stroke="#0E0E0E" stroke-width="2"/>
+<rect x="34" y="34" width="1132" height="562" fill="none" stroke="#0E0E0E" stroke-width=".7"/>
+<text x="56" y="74" fill="#0E0E0E" font-family="monospace" font-size="15" letter-spacing="3">ARSIP LEKSIKOGRAFI DIGITAL</text>
+<text x="1144" y="74" fill="#0E0E0E" font-family="monospace" font-size="13" text-anchor="end">EDISI 001 / 2026</text>
+<line x1="56" y1="92" x2="1144" y2="92" stroke="#0E0E0E" stroke-width="2"/>
+<text x="51" y="285" fill="#0E0E0E" font-family="Georgia,'Times New Roman',serif" font-size="132" font-weight="900" letter-spacing="-8">N3KR0L0G1</text>
+<rect x="59" y="326" width="14" height="14" fill="#B42318"/>
+<text x="91" y="341" fill="#0E0E0E" font-family="Georgia,serif" font-size="30" font-style="italic">Kata-kata yang pergi, tidak harus hilang.</text>
+<line x1="56" y1="390" x2="1144" y2="390" stroke="#0E0E0E" stroke-width="1"/>
+<g fill="#0E0E0E" font-family="monospace" font-size="15" letter-spacing="1">
+<text x="58" y="430">OBITUARI</text><text x="255" y="430">KATALOG LEMA</text><text x="494" y="430">TIPOGRAFI KINETIK</text>
+</g>
+<g transform="translate(880,466)">
+<circle cx="0" cy="0" r="58" fill="none" stroke="#B42318" stroke-width="2.5"/><circle cx="0" cy="0" r="48" fill="none" stroke="#B42318" stroke-width="1"/>
+<text x="0" y="-8" fill="#B42318" text-anchor="middle" font-family="Georgia,serif" font-size="13" letter-spacing="1">ARSIP</text><text x="0" y="9" fill="#B42318" text-anchor="middle" font-family="Georgia,serif" font-size="13" letter-spacing="1">BAHASA</text>
+</g>
+<text x="58" y="555" fill="#0E0E0E" font-family="Georgia,serif" font-size="20">Koran ya koran, rek. Karena setiap kata punya masa.</text>
+</svg>

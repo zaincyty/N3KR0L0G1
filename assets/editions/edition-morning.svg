@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="440" viewBox="0 0 720 440">
+<rect width="720" height="440" fill="#EFEBE3"/>
+<rect x="16" y="16" width="688" height="408" fill="none" stroke="#0E0E0E" stroke-width="2"/>
+<rect x="26" y="26" width="668" height="388" fill="none" stroke="#0E0E0E" stroke-width=".6"/>
+<g fill="#0E0E0E" font-family="Georgia,serif">
+<text x="42" y="58" font-size="14" letter-spacing="2">N3KR0L0G1 / EDISI WARNA</text>
+<text x="678" y="58" font-size="13" text-anchor="end">01 — 02</text>
+</g>
+<line x1="42" y1="72" x2="678" y2="72" stroke="#0E0E0E" stroke-width="1.5"/>
+<g transform="translate(572,132)" stroke="#B42318" fill="none" stroke-width="4" stroke-linecap="round">
+<circle cx="0" cy="0" r="24"/><path d="M0 -41V-32M0 32V41M-41 0H-32M32 0H41M-29 -29L-23 -23M23 23L29 29M-29 29L-23 23M23 -23L29 -29"/>
+</g>
+<text x="42" y="180" fill="#0E0E0E" font-family="Georgia,serif" font-size="78" font-weight="bold">EDISI PAGI</text>
+<text x="46" y="218" fill="#0E0E0E" font-family="Georgia,serif" font-size="21" font-style="italic">Kertas hangat, tinta arang.</text>
+<line x1="42" y1="248" x2="678" y2="248" stroke="#0E0E0E" stroke-width="1"/>
+<g font-family="monospace" fill="#0E0E0E" font-size="14">
+<text x="42" y="283">PAPER / INK / RHYTHM</text>
+<text x="42" y="309"># #EFEBE3   # #0E0E0E   # #B42318</text>
+</g>
+<g transform="translate(42,340)">
+<rect x="0" y="0" width="52" height="38" fill="#EFEBE3" stroke="#0E0E0E"/><rect x="61" y="0" width="52" height="38" fill="#0E0E0E"/><rect x="122" y="0" width="52" height="38" fill="#B42318"/><rect x="183" y="0" width="52" height="38" fill="#6B6B68"/>
+<text x="265" y="15" fill="#0E0E0E" font-family="Georgia,serif" font-size="20">Koran ya koran, rek.</text>
+<text x="265" y="34" fill="#0E0E0E" font-family="monospace" font-size="10">DESIGN STUDY / PALETTE</text>
+</g>
+</svg>
