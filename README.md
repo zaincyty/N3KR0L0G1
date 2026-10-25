@@ -205,7 +205,7 @@ NEKROLOGI/
 Tak perlu `npm install`. Klona repo, lalu buka `index.html` di browser.
 
 ```bash
-git clone https://github.com/[USERNAME]/NEKROLOGI.git
+git clone https://github.com/zaincyty/N3KR0L0G1.git
 cd NEKROLOGI
 ```
 
