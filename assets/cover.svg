@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="520" viewBox="0 0 1600 520">
+<rect width="1600" height="520" fill="#EFEBE3"/>
+<rect x="28" y="28" width="1544" height="464" fill="none" stroke="#0E0E0E" stroke-width="2"/>
+<g fill="#0E0E0E" font-family="Georgia, 'Times New Roman', serif">
+<text x="64" y="76" font-size="19" letter-spacing="4">ARSIP LEKSIKOGRAFI DIGITAL</text>
+<text x="1535" y="76" font-size="18" text-anchor="end" letter-spacing="2">EDISI 001 · INDONESIA</text>
+<line x1="64" y1="96" x2="1536" y2="96" stroke="#0E0E0E" stroke-width="2"/>
+<text x="64" y="285" font-size="174" font-weight="700" letter-spacing="-9">N3KR0L0G1</text>
+<text x="70" y="340" font-size="27" font-style="italic">Kata-kata yang pergi, tidak harus hilang.</text>
+<line x1="64" y1="370" x2="1536" y2="370" stroke="#0E0E0E" stroke-width="1"/>
+<text x="64" y="412" font-size="18" letter-spacing="3">OBITUARI · KATALOG LEMA · TIPOGRAFI KINETIK</text>
+<text x="64" y="455" font-size="16">SEBUAH LEMBARAN UNTUK KATA YANG PERLAHAN TERLUPAKAN</text>
+</g>
+<g fill="none" stroke="#B42318" stroke-width="3"><path d="M1390 410 h130"/><path d="M1450 390 v40"/><circle cx="1450" cy="410" r="28"/></g>
+<text x="1450" y="414" text-anchor="middle" fill="#B42318" font-family="monospace" font-size="14">NK</text>
+</svg>
