@@ -161,35 +161,73 @@ function updateStageWord(word, index, total) {
         '<p>' + word.curator_note + ' Melalui lembaran memorial ini, kita mencatat jejaknya agar kehilangan perbendaharaan bahasa tidak berlangsung dalam senyap.</p>';
     }
 
-    /* 5. rincian arsip data lema */
-    if (dossier) {
-      const dl = dossier.querySelector(".metadata-list");
-      if (dl) {
-        const derivatives = word.survived_by && word.survived_by.length ? word.survived_by.join(", ") : "Tidak ada catatan kata turunan aktif";
-        dl.innerHTML = 
-          "<dt>Tahun Pertama Tercatat</dt>" +
-          "<dd><time datetime=\"" + word.first_recorded + "\">" + word.first_recorded + "</time></dd>" +
-          "<dt>Tahun Terakhir Terdengar</dt>" +
-          "<dd><time datetime=\"" + word.last_seen + "\">" + word.last_seen + "</time> - " + word.last_seen_context + " -</dd>" +
-          "<dt>Sebab Kepergian</dt>" +
-          "<dd>" + word.cause_of_death + "</dd>" +
-          "<dt>Kata Turunan yang Ditinggalkan</dt>" +
-          "<dd><em>" + derivatives + "</em></dd>" +
-          "<dt>Akar Bahasa - Etimologi -</dt>" +
-          "<dd>" + (word.etymology || "Melayu Klasik") + "</dd>" +
-          "<dt>Catatan Kurator</dt>" +
-          "<dd>" + word.curator_note + "</dd>";
+    /* 5. rincian arsip data lema (desain berkas biografis kata baru) */
+    const archiveNo = document.getElementById("dossier-archive-no");
+    if (archiveNo) {
+      archiveNo.textContent = "0" + word.first_recorded + " — " + String(index + 1).padStart(2, "0");
+    }
+
+    const firstRec = document.getElementById("dossier-first-recorded");
+    if (firstRec) {
+      if (word.id === "renjana") {
+        firstRec.innerHTML = "<strong>1930</strong> &middot; Terbitan sastra majalah <em>Poedjangga Baroe</em>.";
+      } else {
+        firstRec.innerHTML = "<strong>" + word.first_recorded + "</strong> &middot; Arsip dokumentasi leksikografi awal.";
       }
     }
 
-    /* 6. kutipan sastra lema */
-    if (quote && word.farewell_quote) {
-      const qp = quote.querySelector("blockquote p");
-      const qfig = quote.querySelector("figcaption");
-      if (qp) qp.textContent = "“" + word.farewell_quote.text + "”";
-      if (qfig) {
-        const src = word.farewell_quote.source || "Arsip Sastra Klasik";
-        qfig.innerHTML = "<cite>" + src + "</cite>, <time datetime=\"" + word.farewell_quote.year + "\">" + word.farewell_quote.year + "</time>";
+    const lastSeen = document.getElementById("dossier-last-seen");
+    if (lastSeen) {
+      const cleanContext = (word.last_seen_context || "").replace(/\.+$/, "");
+      lastSeen.innerHTML = "<strong>" + word.last_seen + "</strong> &middot; " + cleanContext + ".";
+    }
+
+    const causeEl = document.getElementById("dossier-cause");
+    if (causeEl) {
+      if (word.id === "renjana") {
+        causeEl.innerHTML = "Tergusur oleh kata serapan <em>passion</em> dan <em>obsession</em>, serta penyederhanaan rasa bahasa ke kata <em>hasrat</em>.";
+      } else {
+        const highlighted = (word.cause_of_death || "").replace(/\b(passion|obsession|hasrat|imitasi|sintetis|palsu|gadget|gawai|handphone|download|unduh|online|daring)\b/gi, "<em>$1</em>");
+        causeEl.innerHTML = highlighted;
+      }
+    }
+
+    const derivEl = document.getElementById("dossier-derivatives");
+    if (derivEl) {
+      const derivatives = word.survived_by && word.survived_by.length ? word.survived_by[0] : (word.headword || "—");
+      derivEl.innerHTML = 
+        "<span class=\"dossier-derivative-term\">" + derivatives + "</span>" +
+        "<span class=\"dossier-badge mono\">ARKAIS / TIDAK AKTIF DI PERCAKAPAN LISAN</span>";
+    }
+
+    const etymEl = document.getElementById("dossier-etymology");
+    if (etymEl) {
+      if (word.id === "renjana") {
+        etymEl.innerHTML = "Sanskerta <em>ra&ntilde;jana</em> &middot; zat yang memberi warna cerah, membangkitkan pesona batin.";
+      } else {
+        etymEl.innerHTML = (word.etymology || "Melayu Klasik");
+      }
+    }
+
+    /* 6. kutipan sastra lema (pita kutipan perpisahan baru) */
+    const quoteText = document.getElementById("dossier-quote-text");
+    if (quoteText && word.farewell_quote) {
+      const rawText = word.farewell_quote.text.replace(/^[“"…\s]+/, "").replace(/[”"]+$/, "");
+      quoteText.textContent = "…" + rawText + "”";
+    }
+    const citeName = document.getElementById("dossier-cite-name");
+    const citeWork = document.getElementById("dossier-cite-work");
+    const citeYear = document.getElementById("dossier-cite-year");
+    if (citeName && word.farewell_quote) {
+      const srcParts = (word.farewell_quote.source || "Sastrawan Anonim").split(",");
+      citeName.textContent = srcParts[0].replace(/^dalam sajak\s*/i, "").trim() || word.farewell_quote.source;
+      if (citeWork) {
+        const workTitle = srcParts[1] ? srcParts[1].replace(/^dalam sajak\s*/i, "").trim() : "Warta Sastra";
+        citeWork.textContent = workTitle;
+      }
+      if (citeYear) {
+        citeYear.textContent = word.farewell_quote.year;
+        citeYear.setAttribute("datetime", String(word.farewell_quote.year));
       }
     }
 

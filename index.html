@@ -16,18 +16,10 @@ N3KR0L0G1 - index.html
 
   <title>NEKROLOGI / Lembaran Kata yang Telah Berpulang</title>
 
-  <!-- stylesheet css (ditambah versi agar browser HP tidak menahan cache lawas) -->
+  <!-- stylesheet css dengan versi cache-busting -->
   <link rel="stylesheet" href="css/tokens.css?v=1.1">
   <link rel="stylesheet" href="css/layout.css?v=1.1">
   <link rel="stylesheet" href="css/components.css?v=1.1">
-
-  <script src="js/data.js?v=1.1" defer></script>
-  <script src="js/render.js?v=1.1" defer></script>
-  <script src="js/main.js?v=1.1" defer></script>
-
-  <link rel="stylesheet" href="css/tokens.css?v=20261024b">
-  <link rel="stylesheet" href="css/layout.css?v=20261024b">
-  <link rel="stylesheet" href="css/components.css?v=20261024b">
 
   <!-- ikon surat kabar -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -207,40 +199,85 @@ N3KR0L0G1 - index.html
           </p>
         </div>
 
-        <!-- data biografis kata -->
-        <section class="archival-dossier" aria-label="Catatan Biografis Lema Renjana">
-          <h2 class="chronicle-heading">Catatan Biografis Kata</h2>
+        <!-- S3Ct10N: Catatan Biografis Kata (Adopsi Pola Olivia Ng + CodePen Dossier) -->
+        <section class="archival-dossier" aria-labelledby="dossier-title">
+          <header class="dossier-header">
+            <h2 id="dossier-title" class="dossier-title">CATATAN BIOGRAFIS KATA</h2>
+            <div class="dossier-title-rule" aria-hidden="true"></div>
+            <div class="dossier-subhead-wrap">
+              <div class="dossier-subhead mono">
+                ARSIP NO.&nbsp;<span id="dossier-archive-no" class="dossier-no-signal">01930 &mdash; 01</span>
+              </div>
+              <div class="dossier-subhead-underline" aria-hidden="true"></div>
+            </div>
+          </header>
 
-          <dl class="metadata-list">
-            <dt>Tahun Pertama Tercatat</dt>
-            <dd><time datetime="1930">1930</time> - Terbitan sastra majalah <em>Poedjangga Baroe</em> -</dd>
+          <div class="dossier-body">
+            <!-- Kolom Kiri: Tabel Data Leksikal -->
+            <div class="dossier-table" role="table" aria-label="Rincian Kronologis Lema">
+              
+              <div class="dossier-row" role="row">
+                <div class="dossier-label" role="rowheader">PERTAMA TERCATAT</div>
+                <div class="dossier-value" id="dossier-first-recorded" role="cell">
+                  <strong>1930</strong> &middot; Terbitan sastra majalah <em>Poedjangga Baroe</em>.
+                </div>
+              </div>
 
-            <dt>Tahun Terakhir Terdengar</dt>
-            <dd><time datetime="1998">1998</time> - Pidato Pelepasan Sarjana Sastra UI Jakarta -</dd>
+              <div class="dossier-row" role="row">
+                <div class="dossier-label" role="rowheader">TERAKHIR TERDENGAR</div>
+                <div class="dossier-value" id="dossier-last-seen" role="cell">
+                  <strong>1998</strong> &middot; Pidato Pelepasan Sarjana Sastra UI Jakarta.
+                </div>
+              </div>
 
-            <dt>Penyebab Kepergian</dt>
-            <dd>Tergusur oleh kata serapan <em>passion</em> dan <em>obsession</em>, serta penyederhanaan rasa bahasa ke kata <em>hasrat</em>.</dd>
+              <div class="dossier-row" role="row">
+                <div class="dossier-label" role="rowheader">PENYEBAB KEPERGIAN</div>
+                <div class="dossier-value" id="dossier-cause" role="cell">
+                  Tergusur oleh kata serapan <em>passion</em> dan <em>obsession</em>, serta penyederhanaan rasa bahasa ke kata <em>hasrat</em>.
+                </div>
+              </div>
 
-            <dt>Kata Turunan yang Ditinggalkan</dt>
-            <dd><em>merenjana</em> - status leksikal arkais / tidak aktif di percakapan lisan -</dd>
+              <div class="dossier-row" role="row">
+                <div class="dossier-label" role="rowheader">KATA TURUNAN YANG DITINGGALKAN</div>
+                <div class="dossier-value dossier-value--split" id="dossier-derivatives" role="cell">
+                  <span class="dossier-derivative-term">merenjana</span>
+                  <span class="dossier-badge mono">ARKAIS / TIDAK AKTIF DI PERCAKAPAN LISAN</span>
+                </div>
+              </div>
 
-            <dt>Akar Bahasa - Etimologi -</dt>
-            <dd>Sanskerta <em>rañjana</em> - zat yang memberi warna cerah, membangkitkan pesona batin -</dd>
+              <div class="dossier-row" role="row">
+                <div class="dossier-label" role="rowheader">AKAR BAHASA &middot; ETIMOLOGI</div>
+                <div class="dossier-value" id="dossier-etymology" role="cell">
+                  Sanskerta <em>ra&ntilde;jana</em> &middot; zat yang memberi warna cerah, membangkitkan pesona batin.
+                </div>
+              </div>
 
-            <dt>Catatan Kurator</dt>
-            <dd>Dipilih sebagai berita duka utama karena mewakili kehilangan kosakata yang paling nyata, ia masih hidup di atas kertas puisi, tetapi telah mati di lidah masyarakatnya.</dd>
-          </dl>
+            </div>
+
+            <!-- Kolom Kanan: Tempat Gambar Mandiri (Slot Fleksibel img/svg) -->
+            <div class="dossier-art" aria-label="Ilustrasi Spesimen Kata">
+              <div class="dossier-art__slot" id="dossier-art-slot">
+                <img src="icons/specimen-flower.png" alt="Sketsa botani spesimen bunga layu" class="specimen-img" width="407" height="351" loading="lazy">
+              </div>
+            </div>
+          </div>
+
+          <!-- Pita Kutipan Perpisahan (Pola Notepaper Chris Coyier & Alan Kay) -->
+          <figure class="dossier-quote-card" id="dossier-quote">
+            <div class="dossier-quote__mark" aria-hidden="true">&ldquo;</div>
+            <div class="dossier-quote__body">
+              <blockquote id="dossier-quote-text">
+                &hellip;dan renjana itu tumbuh tanpa nama, menjalar ke dinding-dinding sunyi sebelum fajar merekah.&rdquo;
+              </blockquote>
+              <figcaption class="dossier-quote__author" id="dossier-quote-author">
+                <div class="dossier-quote__meta">
+                  <span id="dossier-cite-name">Sitor Situmorang</span>, <cite id="dossier-cite-work">Wajah Tak Bernama</cite>, <time id="dossier-cite-year" datetime="1955">1955</time>
+                </div>
+                <div class="dossier-cite-line" aria-hidden="true">&mdash;</div>
+              </figcaption>
+            </div>
+          </figure>
         </section>
-
-        <!-- kutipan perpisahan bersejarah -->
-        <figure class="farewell-quote-block">
-          <blockquote>
-            <p>“…dan renjana itu tumbuh tanpa nama, menjalar ke dinding-dinding sunyi sebelum fajar merekah.”</p>
-          </blockquote>
-          <figcaption>
-            <cite>Sitor Situmorang</cite>, dalam sajak <em>Wajah Tak Bernama</em>, <time datetime="1955">1955</time>
-          </figcaption>
-        </figure>
       </div>
     </article>
 
@@ -1081,9 +1118,9 @@ N3KR0L0G1 - index.html
       </div>
     </footer>
 
-  <!-- script js -->
-  <script src="js/data.js" defer></script>
-  <script src="js/render.js" defer></script>
-  <script src="js/main.js" defer></script>
+  <!-- script js dengan versi cache-busting -->
+  <script src="js/data.js?v=1.1" defer></script>
+  <script src="js/render.js?v=1.1" defer></script>
+  <script src="js/main.js?v=1.1" defer></script>
 </body>
 </html>

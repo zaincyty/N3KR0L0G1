@@ -614,6 +614,81 @@ body.is-night-edition .cards-header-strip {
   border-color: #383530;
 }
 
+/* penyesuaian berkas catatan biografis kata di edisi malam */
+body.is-night-edition .archival-dossier {
+  border-color: rgba(239, 235, 227, 0.35);
+}
+
+body.is-night-edition .dossier-header,
+body.is-night-edition .dossier-body,
+body.is-night-edition .dossier-table,
+body.is-night-edition .dossier-title,
+body.is-night-edition .dossier-subhead,
+body.is-night-edition .dossier-subhead__line {
+  border-color: rgba(239, 235, 227, 0.2);
+  background-color: transparent;
+  color: #EFEBE3;
+}
+
+body.is-night-edition .dossier-title-rule {
+  background: rgba(239, 235, 227, 0.2);
+}
+
+body.is-night-edition .dossier-subhead-underline {
+  background: var(--signal, #FF4A1A);
+}
+
+body.is-night-edition .dossier-subhead__line {
+  background: #EFEBE3;
+  opacity: 0.25;
+}
+
+body.is-night-edition .dossier-row {
+  border-bottom-color: rgba(239, 235, 227, 0.12);
+}
+
+body.is-night-edition .dossier-label {
+  border-right-color: rgba(239, 235, 227, 0.12);
+  color: var(--signal, #FF4A1A);
+}
+
+body.is-night-edition .dossier-value {
+  color: #EFEBE3;
+}
+
+body.is-night-edition .dossier-badge {
+  border-left-color: rgba(239, 235, 227, 0.2);
+  color: var(--signal, #FF4A1A);
+}
+
+body.is-night-edition .dossier-art {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+body.is-night-edition .dossier-art__slot img {
+  filter: invert(0.92) brightness(1.2);
+}
+
+body.is-night-edition .specimen-sketch g {
+  stroke: #EFEBE3;
+  opacity: 0.8;
+}
+
+body.is-night-edition .dossier-quote-card {
+  background: #1C1B18;
+  border-left-color: var(--signal, #FF4A1A);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+}
+
+body.is-night-edition .dossier-quote__body blockquote {
+  color: #EFEBE3;
+}
+
+body.is-night-edition .dossier-quote__author {
+  color: #EFEBE3;
+  opacity: 0.65;
+}
+
 /* ==============================================================================
    8. M1KR0-1NT3R4KS1 D4N F1S1K4 T0MB0L - respon sentuhan pegas kenyal -
    ============================================================================== */
