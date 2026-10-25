@@ -215,7 +215,7 @@ Atau jalankan server lokal:
 python -m http.server 8000
 ```
 
-Buka `http://localhost:8000`. Ganti `[USERNAME]` dengan username GitHub yang benar.
+Buka `http://localhost:8000`. 
 
 ---
 
